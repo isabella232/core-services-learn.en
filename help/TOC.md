@@ -16,7 +16,7 @@ audience: end-user
   + [Create Mobile Properties in Launch](launch-mobile/create-mobile-properties-launch-feature-video-setup.md)
   + [Use Dependency Managers for the AEP SDK](launch-mobile/use-dependency-managers-with-mobile-sdk.md)
 + ID Service{#id-service}
-  + [Use Opt-In to Control Experience Cloud Activities Based on User Consent](id-service/use-opt-in-to-control-experience-cloud activities-based-on-user-consent.md)
+  + [Use Opt-In to Control Experience Cloud Activities Based on User Consent](id-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
   + [Implement the Id Service in Websites with Launch](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/implement-solutions/id-service.html)
   + [Implement the Id Service in Swift Apps](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-swift-apps-with-launch/implement-solutions/id-service.html)
   + [Implement the Id Service in Objective-C Apps](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-objective-c-apps-with-launch/implement-solutions/id-service.html)
