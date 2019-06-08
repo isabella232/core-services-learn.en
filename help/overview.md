@@ -14,7 +14,7 @@ A collection of how-to videos and tutorials to make you a power-user of Adobe Ex
   <td><a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/implement-solutions/target.html"><img alt="Implement in Websites with Launch" src="assets/launch_referencearchitectureguides.png"></a><br/><a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/implement-solutions/target.html">Implement in Websites with Launch</a></td>
   <td><a href="launch-web/migrate-from-dynamic-tag-manager-to-launch.md"><img alt="Migrate from Adobe Dynamic Tag Manager to Launch" src="assets/thumb_migrateToLaunch.png"></a><br/><a href="launch-web/migrate-from-dynamic-tag-manager-to-launch.md">Migrate from Adobe Dynamic Tag Manager to Launch</a></td>
   <td><a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/configure-launch/launch-switch-environments.html"><img alt="Switch Launch Environments with the Debugger" src="assets/thumb_replaceEmbedCode.png"></a><br/><a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/configure-launch/launch-switch-environments.html">Switch Launch Environments with the Debugger</a></td>
-  <td><br></td>
+  <td><br/></td>
 </tr>
 </table>
 
