@@ -5,7 +5,6 @@ audience: end-user
 
 # Adobe Experience Cloud Core Services Tutorials {#tutorials}
 
-+ [Overview](overview.md)
 + Experience Platform Launch in Websites{#launch-web}
   + [Implement in Websites with Launch](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html)
   + [Migrate from Adobe Dynamic Tag Manager to Launch](launch-web/migrate-from-dynamic-tag-manager-to-launch.md)
