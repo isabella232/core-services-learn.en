@@ -11,9 +11,9 @@ The Adobe Opt-in Object is an extension of the Experience Cloud ID (ECID) servic
 
 An important aspect of privacy regulations is the acquisition and conveyance of user consent over how their personal data may be used and by whom. The latest version of ECID includes functionality, which sits between the user (the UI) and the Adobe solutions and provides conditional firing (e.g., pre and post consent) of Adobe Experience Cloud solution tags based on whether consent by the end user has been given. This is shown in the following image:
 
-![](../assets/opt-in.png)
+![Diagram of how Opt-in works](assets/opt-in.png)
 
-Opt-in is basically the gatekeeper…or is it the keymaster? You decide.
+Opt-in is basically the gatekeeper... or is it the keymaster? You decide.
 
 It boils down to this:
 

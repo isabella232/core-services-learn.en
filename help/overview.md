@@ -25,9 +25,9 @@ A collection of how-to videos and tutorials to make you a power-user of Adobe Ex
   <td><a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-swift-apps-with-launch/index.html"><img alt="Implement in iOS Swift&trade; Apps" src="assets/thumb_swift.png"></a><br/><a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-swift-apps-with-launch/index.html">Implement in iOS Swift&trade; Apps</a></td>
   <td><a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-objective-c-apps-with-launch/index.html"><img alt="Implement in iOS Objective-C Apps" src="assets/thumb_objectiveC.png"></a><br/><a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-objective-c-apps-with-launch/index.html">Implement in iOS Objective-C Apps</a></td>
   <td><a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-android-apps-with-launch/index.html"><img alt="Implement in Android&trade; Apps" src="assets/thumb_android.png"></a><br/><a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-android-apps-with-launch/index.html">Implement in Android&trade; Apps</a></td>
-  <td><a href="launch-mobile/create-mobile-properties-launch-feature-video-setup.md"><img alt="Create Mobile Properties in Launch" src="assets/creating_mobile_propertiesinexperienceplatformlaunch.png"></a><br/><a href="launch-mobile/create-mobile-properties-launch-feature-video-setup.md">Create Mobile Properties in Launch</a></td>
+  <td><a href="launch-mobile/create-mobile-properties-in-launch.md"><img alt="Create Mobile Properties in Launch" src="assets/creating_mobile_propertiesinexperienceplatformlaunch.png"></a><br/><a href="launch-mobile/create-mobile-properties-in-launch.md">Create Mobile Properties in Launch</a></td>
 </tr>
-<tr>  
+<tr>    
   <td><a href="launch-mobile/use-dependency-managers-with-mobile-sdk.md"><img alt="Use Dependency Managers for the AEP SDK" src="assets/using_dependencymanagersfortheaepsdk.png"></a><br/><a href="launch-mobile/use-dependency-managers-with-mobile-sdk.md">Use Dependency Managers for the AEP SDK</a></td>
   <td><br/></td>
   <td><br/></td>

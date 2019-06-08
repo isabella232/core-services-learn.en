@@ -13,7 +13,7 @@ audience: end-user
   + [Implement in iOS Swift Apps](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-swift-apps-with-launch/index.html)
   + [Implement in iOS Objective-C Apps](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-objective-c-apps-with-launch/index.html)
   + [Implement in Android Apps](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-android-apps-with-launch/index.html)
-  + [Create Mobile Properties in Launch](launch-mobile/create-mobile-properties-launch-feature-video-setup.md)
+  + [Create Mobile Properties in Launch](launch-mobile/create-mobile-properties-in-launch.md)
   + [Use Dependency Managers for the AEP SDK](launch-mobile/use-dependency-managers-with-mobile-sdk.md)
 + ID Service{#id-service}
   + [Use Opt-In to Control Experience Cloud Activities Based on User Consent](id-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
