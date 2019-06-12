@@ -13,6 +13,6 @@ The Adobe Experience Cloud Debugger is an extension for the Chrome browser that 
 
 ## Additional Resources
 
-* [Use the Experience Cloud Debugger](debugger/use-the-experience-cloud-debugger.md)
+* [Use the Experience Cloud Debugger](use-the-experience-cloud-debugger.md)
 * [Troubleshoot Adobe Target with the Experience Cloud Debugger](https://docs.adobe.com/content/help/en/target-learn/tutorials/troubleshooting/troubleshoot-with-the-experience-cloud-debugger.html)
 * [Experience Cloud Debugger Documentation](https://marketing.adobe.com/resources/help/en_US/experience-cloud-debugger/)
