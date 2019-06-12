@@ -23,6 +23,7 @@ audience: end-user
   + [Implement the Id Service in Objective-C Apps](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-objective-c-apps-with-launch/implement-solutions/id-service.html)
   + [Implement the Id Service in Android Apps](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-android-apps-with-launch/implement-solutions/id-service.html)
 + Debugger{#debugger}
+  + [Add the Debugger](debugger/add-the-extension.md)
   + [Use the Debugger](debugger/use-the-experience-cloud-debugger.md)
   + [Troubleshoot Target](https://docs.adobe.com/content/help/en/target-learn/tutorials/troubleshooting/troubleshoot-with-the-experience-cloud-debugger.html)
   + [Switch Launch Environments](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/configure-launch/launch-switch-environments.html)
