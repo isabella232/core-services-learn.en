@@ -16,12 +16,12 @@ audience: end-user
   + [Implement in Android Apps](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-android-apps-with-launch/index.html)
   + [Create Mobile Properties](launch-mobile/create-mobile-properties-in-launch.md)
   + [Use Dependency Managers](launch-mobile/use-dependency-managers-with-mobile-sdk.md)
-+ ID Service{#id-service}
++ Identity Service{#id-service}
   + [Use Opt-In to Control Experience Cloud Activities Based on User Consent](id-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
-  + [Implement the Id Service in Websites with Launch](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/implement-solutions/id-service.html)
-  + [Implement the Id Service in Swift Apps](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-swift-apps-with-launch/implement-solutions/id-service.html)
-  + [Implement the Id Service in Objective-C Apps](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-objective-c-apps-with-launch/implement-solutions/id-service.html)
-  + [Implement the Id Service in Android Apps](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-android-apps-with-launch/implement-solutions/id-service.html)
+  + [Implement the Identity Service in Websites with Launch](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/implement-solutions/id-service.html)
+  + [Implement the Identity Service in Swift Apps](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-swift-apps-with-launch/implement-solutions/id-service.html)
+  + [Implement the Identity Service in Objective-C Apps](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-objective-c-apps-with-launch/implement-solutions/id-service.html)
+  + [Implement the Identity Service in Android Apps](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-android-apps-with-launch/implement-solutions/id-service.html)
 + Debugger{#debugger}
   + [Add the Debugger](debugger/add-the-extension.md)
   + [Use the Debugger](debugger/use-the-experience-cloud-debugger.md)

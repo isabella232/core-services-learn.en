@@ -1,15 +1,15 @@
 ---
 title: Using Opt-In to Control Experience Cloud Activities Based on User Consent
-description: The Adobe Opt-in Object is an extension of the Experience Cloud ID (ECID) service, designed to help you control whether and which Experience Cloud solutions can create cookies on web pages or initiate beacons, based on end user consent.
+description: The Adobe Opt-in Object is an extension of the Adobe Experience Platform Identity Service, designed to help you control whether and which Experience Cloud solutions can create cookies on web pages or initiate beacons, based on end user consent.
 ---
 
 # Use Opt-In to Control Experience Cloud Activities Based on User Consent
 
-The Adobe Opt-in Object is an extension of the Experience Cloud ID (ECID) service, designed to help you control whether and which Experience Cloud solutions can create cookies on web pages or initiate beacons, based on end user consent.
+The Adobe Opt-in Object is an extension of the Adobe Experience Platform Identity Service, designed to help you control whether and which Experience Cloud solutions can create cookies on web pages or initiate beacons, based on end user consent.
 
 ## The Basics of Opt-In
 
-An important aspect of privacy regulations is the acquisition and conveyance of user consent over how their personal data may be used and by whom. The latest version of ECID includes functionality, which sits between the user (the UI) and the Adobe solutions and provides conditional firing (e.g., pre and post consent) of Adobe Experience Cloud solution tags based on whether consent by the end user has been given. This is shown in the following image:
+An important aspect of privacy regulations is the acquisition and conveyance of user consent over how their personal data may be used and by whom. The latest version of the Identity Service includes functionality, which sits between the user (the UI) and the Adobe solutions and provides conditional firing (e.g., pre and post consent) of Adobe Experience Cloud solution tags based on whether consent by the end user has been given. This is shown in the following image:
 
 ![Diagram of how Opt-in works](assets/opt-in.png)
 
@@ -17,13 +17,13 @@ Opt-in is basically the gatekeeper... or is it the keymaster? You decide.
 
 It boils down to this:
 
-**If Opt-in is enabled in the ECID (via a Boolean variable), it delays the Experience Cloud solution libraries from firing tags or setting cookies until consent has been given for that solution.**
+**If Opt-in is enabled in the Identity Service (via a Boolean variable), it delays the Experience Cloud solution libraries from firing tags or setting cookies until consent has been given for that solution.**
 
 Opt-in also allows you to decide if any tags fire *before* user consent as well, and then this consent information (along with the consent given by the end user) is stored, so that it can be used on subsequent hits. Storage of the consent is available in the Opt-in options, or you can integrate with a CMP and have it store consent selections.
 
 ## Enabling and Configuring Opt-In
 
-Opt-in also is most easily configurable with Launch, by Adobe. View the following short video to see how.
+Opt-in also is most easily configurable with Adobe Experience Platform Launch. View the following short video to see how.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
 
@@ -43,7 +43,7 @@ In the following video, see a quick demo of Opt-in working on the page, and how 
 
 **NOTE:** It is important to note that at the time of the writing of this article, Opt-in has not been built into the libraries for all of the Experience Cloud solutions. The libraries that are currently supported for Opt-in are:
 
-* Experience Cloud ID Service (ECID)
+* Identity Service
 * Analytics
 * Audience Manager
 * Target
