@@ -13,7 +13,7 @@ Use these videos and tutorials to learn the many Core Services.
 
 * **[Implement the Adobe Experience Platform Mobile SDK in Android Apps (Tutorial)](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-android-apps-with-launch/index.html)**
     <br>
-    *A step-by-step tutorial to learn how to implement the new mobile SDK in Android apps.*
+    *A step-by-step tutorial to learn how to implement the new mobile SDK in Android&trade; apps.*
 
 * **[Use Opt-In to Control Experience Cloud Activities Based on User Consent (Video)](id-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)**
     <br>
