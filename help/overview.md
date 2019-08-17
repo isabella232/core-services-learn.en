@@ -28,11 +28,11 @@ Use these videos and tutorials to learn the many Core Services.
 <table>
 <tr>
   <td>
-    <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
+    <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/implement-solutions/target.html">
       <img alt="Implement in Websites with Launch tutorial" src="assets/launch_referencearchitectureguides.png" />
     </a>
     <div>
-      <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
+      <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/implement-solutions/target.html">
     <strong>Implement in Websites with Launch</strong>
     </a>
     </div>
