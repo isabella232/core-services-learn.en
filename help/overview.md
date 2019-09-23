@@ -11,7 +11,7 @@ Use these videos and tutorials to learn the many Core Services.
 
 ## What's New
 
-* **[Understanding the Adobe Experience Platform Mobile SDK (Video))](launch-mobile/understanding-the-mobile-sdks.md)**
+* **[Understanding the Adobe Experience Platform Mobile SDK (Video)](launch-mobile/understanding-the-mobile-sdks.md)**
     <br>
     *Power end-to-end engagement in your mobile apps.*
 
