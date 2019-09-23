@@ -11,6 +11,10 @@ Use these videos and tutorials to learn the many Core Services.
 
 ## What's New
 
+* **[Understanding the Adobe Experience Platform Mobile SDK (Video)](launch-mobile/understanding-the-mobile-sdks.md)**
+    <br>
+    *Power end-to-end engagement in your mobile apps.*
+
 * **[Implement the Adobe Experience Platform Mobile SDK in Android Apps (Tutorial)](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-android-apps-with-launch/index.html)**
     <br>
     *A step-by-step tutorial to learn how to implement the new mobile SDK in Android&trade; apps.*
@@ -18,10 +22,6 @@ Use these videos and tutorials to learn the many Core Services.
 * **[Use Opt-In to Control Experience Cloud Activities Based on User Consent (Video)](id-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)**
     <br>
     *Control whether and which Experience Cloud solutions can create cookies on web pages or initiate beacons, based on end user consent.*
-
-* **[Migrate from Adobe Dynamic Tag Manager to Launch (Video))](launch-web/migrate-from-dynamic-tag-manager-to-launch.md)**
-    <br>
-    *Learn how to migrate your implementation to our latest tag manager.*
 
 ## Staff Picks
 
