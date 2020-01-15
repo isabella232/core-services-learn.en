@@ -187,7 +187,7 @@ Now let's create an activity in the Target interface.
     >   1. Make sure you are using the exact same URL in the Target interface and didn't accidentally clip off any characters. When running the command in the adb shell, make sure the URL is in quotation marks
     >
     >
-    >   1. Confirm that you added the additional dependencies to the build.gradle file that are required by the Target VEC. These dependencies should have been added during the [Install the Mobile SDK lesson](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-install-the-mobile-sdk.html#update-the-buildgradle-file)
+    >   1. Confirm that you added the additional dependencies to the build.gradle file that are required by the Target VEC. These dependencies should have been added during the [Install the Mobile SDK lesson](https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-install-the-mobile-sdk.html#update-the-buildgradle-file)
     >
     >
     >   1. Try clearing the Data stored in the app detailed in the picture below
