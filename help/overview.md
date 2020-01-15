@@ -15,7 +15,7 @@ Use these videos and tutorials to learn the many Core Services.
     <br>
     *Power end-to-end engagement in your mobile apps.*
 
-* **[Implement the Adobe Experience Platform Mobile SDK in Android Apps (Tutorial)](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-android-apps-with-launch/index.html)**
+* **[Implement the Adobe Experience Platform Mobile SDK in Android Apps (Tutorial)](https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-mobile-android-apps-with-launch/index.html)**
     <br>
     *A step-by-step tutorial to learn how to implement the new mobile SDK in Android&trade; apps.*
 
@@ -28,11 +28,11 @@ Use these videos and tutorials to learn the many Core Services.
 <table>
 <tr>
   <td>
-    <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/implement-solutions/target.html">
+    <a href="https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-websites-with-launch/implement-solutions/target.html">
       <img alt="Implement in Websites with Launch tutorial" src="assets/launch_referencearchitectureguides.png" />
     </a>
     <div>
-      <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/implement-solutions/target.html">
+      <a href="https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-websites-with-launch/implement-solutions/target.html">
     <strong>Implement in Websites with Launch</strong>
     </a>
     </div>
@@ -54,11 +54,11 @@ Use these videos and tutorials to learn the many Core Services.
     <p>
   </td>
   <td>
-    <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-swift-apps-with-launch/index.html">
+    <a href="https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-mobile-ios-swift-apps-with-launch/index.html">
       <img alt="Behind the Scenes: A Customer Experience Powered by Experience Platform video" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-swift-apps-with-launch/index.html">
+      <a href="https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-mobile-ios-swift-apps-with-launch/index.html">
     <strong>Implement in iOS Swift&trade; Apps</strong>
     </a>
     </div>
