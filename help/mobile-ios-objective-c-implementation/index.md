@@ -20,7 +20,7 @@ After completing this tutorial you will be able to:
 
 * Implement the following Adobe Experience Cloud solutions:
   * **[Adobe Experience Platform Identity Service](id-service.md)**
-  * **[Adobe Target](target-vec.md)**
+  * **[Adobe Target](target.md)**
   * **[Adobe Analytics](analytics.md)**
   * **[Adobe Audience Manager](audience-manager.md)**
 
