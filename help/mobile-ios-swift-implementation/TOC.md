@@ -13,7 +13,6 @@ user-guide-url: /content/help/en/core-services-learn/implementing-in-mobile-ios-
   + [Install the Mobile SDK](launch-install-the-mobile-sdk.md)
 + Implementing Solutions{#implement-solutions}
   + [Add the Identity Service](id-service.md)
-  + [Add Adobe Target's VEC](target-vec.md)
   + [Add Adobe Target](target.md)
   + [Add Adobe Analytics](analytics.md)
   + [Add Adobe Audience Manager](audience-manager.md)

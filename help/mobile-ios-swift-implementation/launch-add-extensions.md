@@ -32,7 +32,7 @@ At the end of this lesson, you will be able to:
 
 * Add Extensions to a mobile Launch property
 * Configure the Analytics extension
-* Configure the Target and Target VEC extensions
+* Configure the Target extension
 
 >[!NOTE] Adobe Audience Manager can be implemented via a configuration in the Analytics extension and thus you will not need to add the Audience Manager extension in this tutorial
 
@@ -83,7 +83,7 @@ Now it's time to get to the fun part and start adding the extensions for the sol
 
 ### Add the Target extension
 
-Adobe Target has two official extensions, the Adobe Target extension and the Adobe Target VEC extension. The Adobe Target supports all of the API familiar to users of our earlier mobile SDKs. The Adobe Target VEC extension adds support for Target's Visual Experience Composer, which allows marketers to build simple activities that change image and text elements on the page in a What-You-See-Is-What-You-Get (WYSIWYG) interface. In this tutorial, you will use both.
+The Adobe Target extension supports all of the API familiar to users of our earlier mobile SDKs to deliver personalized content into your app.
 
 >[!NOTE] If you do not have a license for Adobe Target, you can skip this section. At this time, the Target extension for mobile properties is used solely to manage SDK settings and does not add interface options to Launch, such as Rule actions.
 
@@ -102,26 +102,6 @@ Adobe Target has two official extensions, the Adobe Target extension and the Ado
 1. Click the **[!UICONTROL Save]** button
   
     ![Configure the Target settings](images/mobile-extensions-target-settings.png)
-
-### Add the Target VEC extension
-
-Now that the Target extension has been added, you can add the Target VEC extension.
-
->[!NOTE] If you do not have a license for Adobe Target, you can skip this section. At this time, the Target VEC extension for mobile properties is used solely to manage SDK settings and do not add interface options to Launch, such as Rule actions.
-
-**To add the extension**
-
-1. Click on the Catalog tab to see the _uninstalled_ extensions
-
-1. Find the **[!UICONTROL Adobe Target VEC]** extension and click **[!UICONTROL Install]**
-  
-   ![Go to the Extensions catalog and click Install to add the Target extension](images/mobile-extensions-catalog-installTargetVEC.png)
-
-1. Turn **[!UICONTROL Auto-Fetch Target Campaigns]**&nbsp;&nbsp;`ON` . This will pre-fetch all of the Target activities when the app first loads, reducing the number of requests that need to be made.
-1. Leave **[!UICONTROL Fetch In Background]**&nbsp;&nbsp;`OFF`. This setting only appears when `Auto-Fetch Target Campaigns` is used.  Leaving this setting `OFF` will allow you to run VEC activities on the home screen of the app, but will also add a delay to the app start up to ensure that the Target request has completed or timed out before the home screen displays. We recommend that you leave this setting `OFF` when you are running activities on the home screen and toggle it `ON` when you are not.  This setting can be changed at any time in the Launch interface without updating your app.
-1. Click the **[!UICONTROL Save]** button
-  
-    ![Configure the Target VEC settings](images/mobile-extensions-targetVEC-settings.png)
 
 That's it! Now that you have added the extensions to your property, you can add them to a library:
 

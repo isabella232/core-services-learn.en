@@ -93,8 +93,6 @@ ACPCore.trackState("state name", data: ["key": "value"])
 
     ![Basic trackState Call](images/ios/swift/mobile-analytics-basicTrackState2.png)
 
- >[!NOTE] If you completed the lessons to implement Target's VEC, you will have some additional code in the viewDidLoad() function which is not shown in the screenshots of this exercise. This is expected and meant to provide focus on the task at hand.
-
 **To validate the trackState**
 
 1. Save, build and run the project

@@ -30,4 +30,4 @@ To validate the calls to the Identity Service, run the sample app in Xcode or De
 
 ```
 
-[Next "Add Adobe Target VEC Support" >](target-vec.md)
+[Next "Add Adobe Target Support" >](target.md)

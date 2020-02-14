@@ -28,4 +28,4 @@ To validate the calls to the Identity Service, run the sample app in Android Stu
     03-14 17:01:19.033 7743-7803/com.adobe.busbooking D/ADBMobile: IdentityExtension - Received ID response (mid: 59651426340521082405908216148091920022, blob: j8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI, hint: 9, ttl: 604800
     ```
 
-[Next "Add Adobe Target VEC Support" >](target-vec.md)
+[Next "Add Adobe Target Support" >](target.md)
