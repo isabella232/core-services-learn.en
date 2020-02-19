@@ -1,5 +1,9 @@
 # Contribute article
 
+| Production | Stage |
+|---|---|
+| [![Build Status](https://docs.ci.corp.adobe.com/job/core-services-learn.en_production/badge/icon)](https://docs.ci.corp.adobe.com/job/core-services-learn.en_production/lastBuild) | [![Build Status](https://docs.ci.corp.adobe.com/job/core-services-learn.en_stage/badge/icon)](https://docs.ci.corp.adobe.com/job/core-services-learn.en_stage/lastBuild) |
+
 We welcome content contributions from our community and Adobe employees outside the documentation teams. 
 
 ## Adobe Open Source Code of Conduct
