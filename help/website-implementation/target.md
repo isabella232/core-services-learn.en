@@ -281,13 +281,15 @@ For the time-being, custom parameters passed with at.js 2.x requests are not eas
 1. Filter the requests to `tt.omtrdc` (or your CNAME'd domain for Target requests)
 1. Expand the `Headers` > `Request Payload` > `id.customerIds.0` section to validate the customer id settings and value:
 ![customer id settings in the debugger](images/target-debugger-customerId-browser.png)
+
 <!--
 1. Open the Debugger
 1. Go to the Target tab
 1. Expand your client code
 1. You should see parameters in the latest Target request for `vst.crm_id.id` and `vst.crm_id.authState`. `vst.crm_id.id` should have a value of the hashed email address and `vst.crm_id.authState` should have a value of `1` to represent `authenticated`. Note that `crm_id` is the `Integration Code` you specified in the Identity Service configuration and must align with the key you use in your [Customer Attributes data file](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/t-crs-usecase.html):
 
-![The Customer Id details should be visible as custom parameters in the Target request](images/target-debugger-customerId.png)-->
+![The Customer Id details should be visible as custom parameters in the Target request](images/target-debugger-customerId.png)
+-->
 
 >[!WARNING] The Adobe Experience Platform Identity Service will allow you to send multiple ids to the Service, however, only the first one will be sent to Target.
 
