@@ -499,7 +499,8 @@ For the time-being, custom parameters passed with at.js 2.x requests are not eas
 1. Expand your client code
 1. You should see the `orderConfirmPage` request as the latest Target request with the orderId, orderTotal, and productPurchasedId parameters populated with the details of your order
 
-   ![orderConfirmPage request with required parameters](images/target-debugger-orderConfirmPage.png)-->
+   link to "orderConfirmPage request with required parameters": images/target-debugger-orderConfirmPage.png 
+-->
 
 ### Custom requests
 
