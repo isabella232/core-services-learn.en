@@ -416,17 +416,15 @@ The code for this plug-in is available in the [Analytics Documentation](https://
 
    ```javascript
    /*
-   * Plugin: getValOnce_v1.11
+   * Adobe Consulting Plugin: getValOnce v2.0
    */
-   s.getValOnce=new Function("v","c","e","t",""
-   +"var s=this,a=new Date,v=v?v:'',c=c?c:'s_gvo',e=e?e:0,i=t=='m'?6000"
-   +"0:86400000,k=s.c_r(c);if(v){a.setTime(a.getTime()+e*i);s.c_w(c,v,e"
-   +"==0?0:a);}return v==k?'':v");
+   s.getValOnce=function(vtc,cn,et,ep){if(vtc&&(cn=cn||"s_gvo",et=et||0,ep="m"===ep?6E4:864E5,vtc!==this.c_r(cn))){var e=new Date();e.setTime(e.getTime()+et*ep);this.c_w(cn,vtc,0===et?0:ep);return vtc}return""};
+
    ```
 
 1. Paste it into the code window in the Analytics extension (if you don't still have it open, re-open it as per the previous step), **completely below** the doPlugins function (not inside of it).
 
-      ![Add Plug-in Code](images/analytics-doPluginsAndGeValOnceCode.png)
+      ![Add Plug-in Code](images/analytics-doPluginsAndGeValOnceCode2.png)
 
 You can now call this plug-in from within doPlugins.
 
@@ -451,12 +449,12 @@ First you will call a plug-in which has been incorporated into the AppMeasuremen
 
       This code will make sure that the same value is not sent in more than once in a row for 30 days (see the documentation for ways to customize this code to your needs).
 
-      ![Call Plug-ins in doPlugins](images/analytics-doPluginsWithPlugins.png)
+      ![Call Plug-ins in doPlugins](images/analytics-doPluginsWithPlugins2.png)
 
 1. Save the code window
 1. Click **[!UICONTROL Save to Library and Build]**
 
-      ![Call Plug-ins in doPlugins](images/analytics-saveExtensionAndBuild.png)
+      ![Call Plug-ins in doPlugins](images/analytics-saveExtensionAndBuild2.png)
 
 ### Validate the Plug-ins
 
