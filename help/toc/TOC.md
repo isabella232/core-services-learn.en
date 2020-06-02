@@ -1,5 +1,6 @@
 ---
 user-guide-title: Adobe Experience Cloud Core Services Tutorials
+user-guide-description: Adobe Experience Cloud Core Services are capabilities provided to Experience Cloud customers to help them implement and get maximum value from their licensed solutions. Use these videos and tutorials to learn the many Core Services.
 audience: end-user
 ---
 
