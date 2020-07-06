@@ -51,7 +51,9 @@ Since this is the first extension you are adding, here is a quick overview of ex
 
     ![Save the extension](images/idservice-save.png)
 
->[!NOTE] Each version of the Identity Service extension comes with a specific version of VisitorAPI.js which is noted in the extension description. You update the VisitorAPI.js version by updating the Identity Service extension.
+>[!NOTE]
+>
+>Each version of the Identity Service extension comes with a specific version of VisitorAPI.js which is noted in the extension description. You update the VisitorAPI.js version by updating the Identity Service extension.
 
 ### Validate the Extension
 

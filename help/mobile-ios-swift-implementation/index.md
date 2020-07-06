@@ -28,11 +28,13 @@ After completing this tutorial you will be able to:
 
 * Publish changes in Launch through development, staging, and production environments
 
->[!NOTE] Similar multi-solution tutorials are also available for the following platforms:
+>[!NOTE]
 >
-> * [Implementing the Experience Cloud in Mobile iOS Objective-C Applications](/help/mobile-ios-objective-c-implementation/index.md)
-> * [Implementing the Experience Cloud in Mobile Android&trade; Applications](/help/mobile-android-implementation/index.md)
-> * [Implementing the Experience Cloud in Websites with Launch](/help/website-implementation/index.md)
+>Similar multi-solution tutorials are also available for the following platforms:
+>
+>* [Implementing the Experience Cloud in Mobile iOS Objective-C Applications](/help/mobile-ios-objective-c-implementation/index.md)
+>* [Implementing the Experience Cloud in Mobile Android&trade; Applications](/help/mobile-android-implementation/index.md)
+>* [Implementing the Experience Cloud in Websites with Launch](/help/website-implementation/index.md)
 
 ## Prerequisites
 

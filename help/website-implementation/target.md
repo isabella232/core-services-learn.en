@@ -82,7 +82,9 @@ In this first exercise we will add the extension and look at the configurations.
 
 At this point, Target isn't really doing anything, so there is nothing to validate.
 
->[!NOTE] Each version of the Target extension comes with a specific version of at.js, which is listed in the extension description. You update the at.js version by updating the Target extension.
+>[!NOTE]
+>
+>Each version of the Target extension comes with a specific version of at.js, which is listed in the extension description. You update the at.js version by updating the Target extension.
 
 ## Load Target and Fire the Page Load Request
 
@@ -169,7 +171,9 @@ Passing parameters in the Target request adds powerful capabilities to your targ
 1. `Add Params to All Requests`, which adds parameters in all Target requests, e.g. the page load request plus additional  requests made from Custom Code actions or hardcoded on your site (equivalent to the [targetPageParamsAll()](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html) method)
 
 These actions can be used *before* the `Load Target` action and can set different parameters on different pages based on your rule configurations. Use the rule ordering feature you used when setting Customer IDs with the Identity Service to set additional parameters on the `Library Loaded` event before the rule firing the page load request.
->[!TIP] Since most implementations use the page load request for activity delivery, it usually sufficient to just use the `Add Params to Page Load Requests` action.
+>[!TIP]
+>
+>Since most implementations use the page load request for activity delivery, it usually sufficient to just use the `Add Params to Page Load Requests` action.
 
 ### Request (mbox) Parameters
 
@@ -291,11 +295,15 @@ For the time-being, custom parameters passed with at.js 2.x requests are not eas
 ![The Customer Id details should be visible as custom parameters in the Target request](images/target-debugger-customerId.png)
 -->
 
->[!WARNING] The Adobe Experience Platform Identity Service will allow you to send multiple ids to the Service, however, only the first one will be sent to Target.
+>[!WARNING]
+>
+>The Adobe Experience Platform Identity Service will allow you to send multiple ids to the Service, however, only the first one will be sent to Target.
 
 ### Add the Property Token Parameter
 
->[!NOTE] This is an optional exercise for Target Premium customers.
+>[!NOTE]
+>
+>This is an optional exercise for Target Premium customers.
 
 The property token is a reserved parameter used with the Target Premium [Enterprise User Permissions](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/property-channel.html) feature. It is used to define different digital properties so that different members of an Experience Cloud Organization can be assigned different permissions on each property. For example, you might want one group of users to be able to set up Target activities on your web site, but not in your mobile application.
 

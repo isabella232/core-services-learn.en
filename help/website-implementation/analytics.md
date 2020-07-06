@@ -65,7 +65,9 @@ The Analytics extension consists of two main parts:
 
    ![Set the page name variable and save](images/analytics-extension-pageName.png)
 
->[!NOTE] Global variables can be set in the extension configuration or in rule actions. Be aware that when setting variables in the extension configuration, the data layer must be defined *before* the Launch embed codes.
+>[!NOTE]
+>
+>Global variables can be set in the extension configuration or in rule actions. Be aware that when setting variables in the extension configuration, the data layer must be defined *before* the Launch embed codes.
 
 ## Send the Page View Beacon
 
@@ -122,7 +124,9 @@ Now that you have created a rule to send an Analytics beacon, you should be able
 
       ![Validate the page hit](images/analytics-validatePageHit.png)
 
->[!NOTE] If the Page Name is not showing up for you, go back through the steps in this page to make sure that you haven't missed anything.
+>[!NOTE]
+>
+>If the Page Name is not showing up for you, go back through the steps in this page to make sure that you haven't missed anything.
 
 ## Add Variables with Rules
 
