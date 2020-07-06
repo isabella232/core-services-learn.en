@@ -72,7 +72,9 @@ A configuration in the Adobe Analytics Admin Console is required to start forwar
 
     ![Complete SSF setup](images/mobile-aam-enableSSFcomplete.png)
 
->[!NOTE] Since SSF needs to be enabled per report suite, don't forget to repeat this step for your real report suites when you are deploying SSF in your actual app's report suite.
+>[!NOTE]
+>
+>Since SSF needs to be enabled per report suite, don't forget to repeat this step for your real report suites when you are deploying SSF in your actual app's report suite.
 >
 >Also, if the SSF option is grayed out, you will need to "map the report suite(s) to your Experience Cloud Org in order to enable the option. This is explained in [the documentation](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/report-suite-mapping.html).
 
