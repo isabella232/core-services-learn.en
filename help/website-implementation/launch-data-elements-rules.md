@@ -51,9 +51,13 @@ Data elements are Launch’s version of a data layer. They can store values from
 
    ![Create the Page Name data element](images/launch-dataElement.png).
 
->[!NOTE]**DTM Migrators:** New data element types have been added to Launch, which did not exist in DTM. Some of the new data element types include Local Storage, Session Storage, Page Info, and Random Number
+>[!NOTE]
+>
+>**DTM Migrators:** New data element types have been added to Launch, which did not exist in DTM. Some of the new data element types include Local Storage, Session Storage, Page Info, and Random Number
 
->[!NOTE]Data element capabilities _can be extended with Extensions_. For example, the ContextHub extension allows you to add data elements using features of the extension.
+>[!NOTE]
+>
+>Data element capabilities _can be extended with Extensions_. For example, the ContextHub extension allows you to add data elements using features of the extension.
 
 ## Create a Rule
 
@@ -107,7 +111,9 @@ You are going to create a rule that outputs the Page Name data element value to 
 
 1. Click **[!UICONTROL Save]** to save the rule
 
->[!NOTE]**DTM Migrators:** In Launch, rules are required in order to fire most marketing pixels. For example, in order to fire the Adobe Analytics beacon, you must use a rule to instruct Launch to do so.
+>[!NOTE]
+>
+>**DTM Migrators:** In Launch, rules are required in order to fire most marketing pixels. For example, in order to fire the Adobe Analytics beacon, you must use a rule to instruct Launch to do so.
 >
 >The Rule builder has been dramatically redesigned and rebuilt in Launch. Some of the main changes are:
 >

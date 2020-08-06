@@ -53,7 +53,9 @@ The Analytics extension consists of two main parts:
 
    ![Enter the report suite ids](images/analytics-config-reportSuite.png)
 
-   >[!TIP] We recommend using the [!UICONTROL Manage the library for me option] as the [!UICONTROL Library Management] setting as it makes it much easier to keep the `AppMeasurement.js` library up-to-date.
+   >[!TIP]
+   >
+   >We recommend using the [!UICONTROL Manage the library for me option] as the [!UICONTROL Library Management] setting as it makes it much easier to keep the `AppMeasurement.js` library up-to-date.
 
 1. Under [!UICONTROL General > Tracking Server], enter your tracking server, e.g. "`tmd.sc.omtrdc.net`." Enter your SSL Tracking Server if your site supports `https://`
 
@@ -486,7 +488,9 @@ Now you can make sure that the plug-ins are working.
 
 1. BONUS: You can test this over and over by changing the value of the `cid` parameter in the query string. The Campaign variable should only be there if it is the **first** time you run the page with the value. If you are not seeing the Campaign value in the debugger, simply change the value of the `cid` in the query string of the URL, hit enter, and you should see it again in the debugger.
 
-   >[!NOTE] There are actually a few different ways to grab a parameter out of the query string of the URL, including in the Analytics extension configuration. However, in these other non-plug-in options, they don't provide the ability to stop unnecessary duplication, as you have done here with the getValOnce plug-in. This is the author's favorite method, but you should determine which method works best for you and your needs.
+   >[!NOTE]
+   >
+   >There are actually a few different ways to grab a parameter out of the query string of the URL, including in the Analytics extension configuration. However, in these other non-plug-in options, they don't provide the ability to stop unnecessary duplication, as you have done here with the getValOnce plug-in. This is the author's favorite method, but you should determine which method works best for you and your needs.
 
 Nice work! You have completed the Analytics lesson. Of course, there are many other things that you can do to enhance our Analytics implementation, but hopefully this has given you some of the core skills you will need to tackle the rest of your needs.
 
