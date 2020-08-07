@@ -188,7 +188,7 @@ You will now add the Lifecycle code to the main onResume() function in the app, 
     ```java
      MobileCore.setApplication(getApplication());
      MobileCore.lifecycleStart(null);
-     ```
+    ```
 
 ![Insert Lifecycle Code](images/android/mobile-launch-install-lifecycle.png)
 

@@ -63,9 +63,11 @@ A configuration in the Adobe Analytics Admin Console is required to start forwar
 
 1. From the Report Suites screen and with the report suite(s) selected, choose **[!UICONTROL Edit Settings > General > Server-Side Forwarding]**.
 
-    ![Select the SSF Menu](images/mobile-aam-selectSSFmenu.png)
+   ![Select the SSF Menu](images/mobile-aam-selectSSFmenu.png)
 
-    >[!WARNING] As stated above, you will need to have administrator privileges to see this menu item.
+   >[!WARNING]
+   >
+   >As stated above, you will need to have administrator privileges to see this menu item.
 
 1. Once on the Server-Side Forwarding page, read the info and check the box to **[!UICONTROL Enable Server-Side Forwarding]** for the report suite(s).
 

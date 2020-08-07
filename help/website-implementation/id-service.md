@@ -157,7 +157,9 @@ The Adobe Experience Platform Identity Service passes the Customer IDs in rules 
 
 1. Name the rule `All Pages - Library Loaded - Authenticated - 10`
   
-    >[!TIP] This naming convention indicates you are firing this rule at the top of all pages when the user is authenticated and it will have an order of “10”. Using a naming convention like this&mdash;instead of naming it for the solutions triggered in the actions&mdash;will allow you to minimize the overall number of rules needed by your implementation.
+   >[!TIP]
+   >
+   >This naming convention indicates you are firing this rule at the top of all pages when the user is authenticated and it will have an order of “10”. Using a naming convention like this&mdash;instead of naming it for the solutions triggered in the actions&mdash;will allow you to minimize the overall number of rules needed by your implementation.
 
 1. Under **[!UICONTROL Events]** click **[!UICONTROL Add]**
 
