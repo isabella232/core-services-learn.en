@@ -23,7 +23,7 @@ At the end of this lesson, you will be able to:
 
 The embed code is a `<script>` tag that you put on your webpages to load and execute the logic you build in Launch. If you load the library asynchronously, the browser continues to load the page, retrieves the Launch library, and executes it in parallel. In this case, there is only one embed code, which you put in the `<head>`. (When Launch is deployed synchronously, there are two embed codes, one which you put in the `<head>` and another which you put before the `</body>`).
 
-From the property Overview screen, click on the `Environments` tab to go to the environments page. Note that Development, Staging, and Production environments have been pre-created for you.
+From the property Overview screen, click **[!UICONTROL Environments]** in the left navigation to go to the environments page. Note that Development, Staging, and Production environments have been pre-created for you.
 
 ![Click Environments in the top nav](images/launch-environments.png)
 
@@ -70,9 +70,9 @@ Let's take a moment to review some of the Launch implementation best practices w
 
 * **Data Layer**:
 
-  * We *strongly* recommend creating a digital data layer on your site containing all of the attributes needed to populate variables in Analytics, Target, and other marketing solutions. This sample page only contains a very simple data layer, but a real data layer might contain many more details about the page, the visitor, their shopping cart details, etc. For more info on data layers, please see [Customer Experience Digital Data Layer 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf)
+  * We *strongly* recommend creating a data layer on your site containing all of the attributes needed to populate variables in Analytics, Target, and other marketing solutions. This sample page only contains a very simple data layer, but a real data layer might contain many more details about the page, the visitor, their shopping cart details, etc. For more info on data layers, please see [Customer Experience Digital Data Layer 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf)
 
-  * Define your data layer before the Launch embed code, in order to maximize what you can do in Target, Customer Attributes, and Analytics.
+  * Define your data layer before the Launch embed code, in order to maximize what you can do with Experience Cloud solutions.
 
 * **JavaScript helper libraries**: If you already have a library like JQuery implemented in the `<head>` of your pages, load it before Launch in order to leverage its syntax in Launch and Target
 
