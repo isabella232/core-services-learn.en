@@ -1,7 +1,6 @@
 ---
 title: Implement Target with Launch
 description: Learn how to implement Adobe Target using Launch with at.js, a page load request, parameters, an order request, and custom header/footer code. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
-seo-title: Implement Target with Launch
 solution: Experience Cloud
 ---
 
