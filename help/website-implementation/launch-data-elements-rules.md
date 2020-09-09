@@ -1,8 +1,6 @@
 ---
 title: Add a Data Element, a Rule and a Library
 description: Learn how to create Data Elements, Rules, and a Library in Launch. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
-seo-description:
-seo-title: Add a Data Element, a Rule and a Library
 solution: Experience Cloud
 ---
 
@@ -179,7 +177,7 @@ On the `Edit Rule` page, click the ***[!UICONTROL Working Library]*** dropdown a
 
 ![Select Initial Setup as the Working Library](images/launch-setWorkingLibrary.png)
 
-Once you've selected the library, you should see that the **[!UICONTROL Save]** button now defaults to **[!UICONTROL Save to Library]**. When you make a change in Launch, you can use this option to automatically add the change directly to your working library and rebuild it.
+Once you've selected the library, you should see that the **[!UICONTROL Save]** button now defaults to **[!UICONTROL Save to Library]**. When you make a change in Launch, you can use this option to automatically add the change directly to your working library and/or rebuild it.
 
 Test it out. Open your Custom Code action and just add a colon after the text "The page name is" so the entire code block reads:
 

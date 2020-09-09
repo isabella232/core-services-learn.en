@@ -59,7 +59,7 @@ A property is basically a container that you fill with extensions, rules, data e
 1. Expand the **[!UICONTROL Advanced Options]** section and check the box to **[!UICONTROL Run rule components in sequence]**
 1. Click the **[!UICONTROL Save]** button
 
-   ![Create a new Property](images/launch-newProperty.png#)
+   ![Create a new Property](images/launch-newProperty.png)
 
 Your new property should display on the Properties page. Note that if you check the box next to the property name, options to **[!UICONTROL Configure]** or **[!UICONTROL Delete]** the property appear above the property list. Click on the name of your property (e.g. `Luma Tutorial`) to open the `Overview` screen.
 ![Click the name of the property to open it](images/launch-openProperty.png)
