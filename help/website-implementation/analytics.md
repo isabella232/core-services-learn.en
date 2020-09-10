@@ -46,19 +46,19 @@ The Analytics extension consists of two main parts:
 
    ![Install the Analytics extension](images/analytics-catalog-install.png)
 
-1. Under [!UICONTROL Library Management > Report Suites], enter the report suite ids you would like to use with each Launch environment. Note that as you start typing in the box, you will see a pre-populated list of all of your report suites. (It's okay to use one report suite for all environments in this tutorial, but in real life you would want to use separate report suites, as shown in the image below)
+1. Under [!UICONTROL Library Management > Report Suites], enter the report suite ids you would like to use with each Launch environment. If your users has access to Adobe Analytics, note that as you start typing in the box, you will see a pre-populated list of all of your report suites. (It's okay to use one report suite for all environments in this tutorial, but in real life you would want to use separate report suites, as shown in the image below)
 
    ![Enter the report suite ids](images/analytics-config-reportSuite.png)
 
    >[!TIP] We recommend using the [!UICONTROL Manage the library for me option] as the [!UICONTROL Library Management] setting as it makes it much easier to keep the `AppMeasurement.js` library up-to-date.
 
-1. Under [!UICONTROL General > Tracking Server], enter your tracking server, e.g. "`tmd.sc.omtrdc.net`." Enter your SSL Tracking Server if your site supports `https://`
+1. Under [!UICONTROL General > Tracking Server], enter your tracking server, e.g. `tmd.sc.omtrdc.net`. Enter your SSL Tracking Server if your site supports `https://`
 
    ![Enter the tracking servers](images/analytics-config-trackingServer.png)
 
-1. In the [!UICONTROL Global Variables section], set the [!UICONTROL Page Name] variable using your `Page Name` data element. Click the ![data element icon](images/icon-dataElement.png) icon to open the modal and choose the page `Page Name` data element)
+1. In the [!UICONTROL Global Variables section], under [!UICONTROL Additional Settings], set the [!UICONTROL Page Name] variable using your `Page Name` data element. Click the ![data element icon](images/icon-dataElement.png) icon to open the modal and choose the page `Page Name` data element)
 
-1. Click **[!UICONTROL Save to Library and Build]**
+1. Click **[!UICONTROL Save to Library]**
 
    ![Set the page name variable and save](images/analytics-extension-pageName.png)
 
@@ -74,7 +74,7 @@ You have already created an "All Pages - Library Loaded" rule in the [Add a Data
 
 1. Go to the **[!UICONTROL Rules]** section in the left navigation and then and then click **[!UICONTROL Add Rule]**
 
-   ![Add Rule](images/target-addRule.png)
+   ![Add Rule](images/analytics-addRule.png)
 
 1. Name the rule `All Pages - DOM Ready`
 1. Click **[!UICONTROL Events > Add]** to open the `Event Configuration` screen
@@ -148,9 +148,9 @@ First you need to identify which pages are the Product Detail pages. You will do
 
 1. Name the data element `Page Type`
 1. Select **[!UICONTROL Data Element Type > JavaScript Variable]**
-1. Use `digitalData.page.category.type` as the `JavaScript variable name`
-1. Check the `Clean text` and `Force Lower Case` options
-1. Click **[!UICONTROL Save to Library and Build]**
+1. Use `digitalData.page.category.type` as the **[!UICONTROL JavaScript variable name]**
+1. Check the **[!UICONTROL Clean text]** and **[!UICONTROL Force Lower Case]** options
+1. Click **[!UICONTROL Save to Library]**
 
    ![Add a new Data Element for Page Type](images/analytics-PageTypeDataElement.png)
 
@@ -167,10 +167,9 @@ Next, you will collect the product id of the current Product Detail page with a 
 
 1. Name the data element `Product Id`
 1. Select **[!UICONTROL Data Element Type > JavaScript Variable]**
-1. Use `digitalData.product.0.productInfo.sku` as the `JavaScript variable name`
-1. Check the `Force lowercase value` option
-1. Check the `Clean text` option
-1. Click **[!UICONTROL Save to Library and Build]**
+1. Use `digitalData.product.0.productInfo.sku` as the **[!UICONTROL JavaScript variable name]**
+1. Check the **[!UICONTROL Clean text]** and **[!UICONTROL Force Lower Case]** options
+1. Click **[!UICONTROL Save to Library]**
 
    ![Add a new Data Element for Page Type](images/analytics-ProductIdDataElement.png)
 
@@ -184,7 +183,7 @@ If you are already familiar with Adobe Analytics implementations, you are probab
 1. Find the `Adobe Analytics Product String` extension by Adobe Consulting Services and click **[!UICONTROL Install]**
    ![Add the Adobe Analytics Product String extension by Adobe Consulting](images/analytics-addProductStringExtension.png)
 1. Take a moment to read the instructions
-1. Click **[!UICONTROL Save to Library and Build]**
+1. Click **[!UICONTROL Save to Library]**
 
    ![Save the extension and build it to your library](images/analytics-addProductStringExtensionSave.png)
 
@@ -196,7 +195,7 @@ Now, you will use your new data elements and extension to build your Product Det
 
 1. Go to the **[!UICONTROL Rules]** section in the left navigation and then and then click **[!UICONTROL Add Rule]**
 
-   ![Add Rule](images/target-addRule.png)
+   ![Add Rule](images/analytics-addRule2.png)
 
 1. Name the rule `Product Details - DOM Ready - 40`
 1. Click **[!UICONTROL Events > Add]** to open the `Event Configuration` screen
@@ -277,20 +276,20 @@ In this tutorial, you will trigger an `s.tl()` call using one of the coolest Jav
 
 ### The Use Case
 
-For this use case, you want to know if people are scrolling down on our Luma home page far enough to see the *New Arrivals* section of our page. There is some internal discord at our company about whether people are even seeing that section or not, so you want to use Analytics to determine the truth.
+For this use case, you want to know if people are scrolling down on our Luma home page far enough to see the *Featured Products* section of our page. There is some internal discord at our company about whether people are even seeing that section or not, so you want to use Analytics to determine the truth.
 
 ### Create the Rule in Launch
 
 1. Go to the **[!UICONTROL Rules]** section in the left navigation and then click **[!UICONTROL Add Rule]**
-   ![Add Rule](images/target-addRule.png)
-1. Name the rule `Homepage - New Arrivals enters Viewport`
+   ![Add Rule](images/analytics-addRule3.png)
+1. Name the rule `Homepage - Featured Products enters Viewport`
 1. Click **[!UICONTROL Events > Add]** to open the `Event Configuration` screen
 
-   ![Add New Arrivals Rule](images/analytics-newArrivalsRuleAdd2.png)
+   ![Add Featured Products Rule](images/analytics-newArrivalsRuleAdd2.png)
 
 1. Select **[!UICONTROL Event Type > Enters Viewport]**. This will bring up a field where you need to enter the CSS selector that will identify the item on your page that should trigger the rule when it enters view in the browser.
-1. Go back to the home page of Luma and scroll down to the New Arrivals section.
-1. Right-click on the space between the "NEW ARRIVALS" title and the items in this section, and select `Inspect` from the right-click menu. This will get you close to what you want.
+1. Go back to the home page of Luma and scroll down to the Featured Products section.
+1. Right-click on the space between the "FEATURED PRODUCTS" title and the items in this section, and select `Inspect` from the right-click menu. This will get you close to what you want.
 1. Right around there, possibly right under the selected section, you are looking for a div with `class="we-productgrid aem-GridColumn aem-GridColumn--default--12"`. Locate this element.
 1. Right-click on this element and select **[!UICONTROL Copy > Copy Selector]**
 
@@ -305,7 +304,7 @@ For this use case, you want to know if people are scrolling down on our Luma hom
 1. Select **[!UICONTROL Condition Type > Value Comparison]**
 1. Use the data element picker, choose `Page Name` in the first field
 1. Select  **[!UICONTROL Equals]** from the comparison operator dropdown
-1. In the next field type `content:we-retail:us:en` (this is the page name of the home page as pulled from the data layer - we only want this rule to run on the home page)
+1. In the next field type `content:luma:us:en` (this is the page name of the home page as pulled from the data layer - we only want this rule to run on the home page)
 1. Click **[!UICONTROL Keep Changes]**
 
       ![Configure the Homepage Condition](images/analytics-configHomepageCondition.png)
@@ -313,8 +312,8 @@ For this use case, you want to know if people are scrolling down on our Luma hom
 1. Under Actions, click the ![Click the Plus icon](images/icon-plus.png) to add a new action
 1. Select **[!UICONTROL Extension > Adobe Analytics]**
 1. Select **[!UICONTROL Action Type > Set Variables]**
-1. Set `eVar3` to `Home Page - New Arrivals`
-1. Set `prop3` to `Home Page - New Arrivals`
+1. Set `eVar3` to `Home Page - Featured Products`
+1. Set `prop3` to `Home Page - Featured Products`
 1. Set the `Events` variable to `event3`
 1. Click **[!UICONTROL Keep Changes]**
 
@@ -322,15 +321,13 @@ For this use case, you want to know if people are scrolling down on our Luma hom
 
 1. Under Actions, click the ![Click the Plus icon](images/icon-plus.png) to add another new action
 
-      ![Add Send Beacon Action](images/analytics-newArrivalsSendBeacon2.png)
-
 1. Select **[!UICONTROL Extension > Adobe Analytics]**
 1. Select **[!UICONTROL Action Type > Send Beacon]**
-1. Choose the **[!UICONTROL s.tl()]** tracking option
-1. In the **[!UICONTROL Link Name]** field, enter `Scrolled down to New Arrivals`. This value will be placed into the Custom Links report in Analytics.
+1. Choose the **[!UICONTROL `s.tl()`]** tracking option
+1. In the **[!UICONTROL Link Name]** field, enter `Scrolled down to Featured Products`. This value will be placed into the Custom Links report in Analytics.
 1. Click **[!UICONTROL Keep Changes]**
 
-      ![Config New Arrivals Beacon](images/analytics-configEntersViewportBeacon.png)
+      ![Config Featured Products Beacon](images/analytics-configEntersViewportBeacon.png)
 
 1. Click **[!UICONTROL Save to Library and Build]**
 
@@ -338,7 +335,7 @@ For this use case, you want to know if people are scrolling down on our Luma hom
 
 ### Validate the Track Link Beacon
 
-Now you will want to make sure that this hit goes in when you scroll down to the New Arrivals section of the Home Page of our site. When you first load the homepage, the request shouldn't be made, but as you scroll down and the section comes into view, the hit should fire with our new values.
+Now you will want to make sure that this hit goes in when you scroll down to the Featured Products section of the Home Page of our site. When you first load the homepage, the request shouldn't be made, but as you scroll down and the section comes into view, the hit should fire with our new values.
 
 1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) in your Chrome browser and make sure you are at the top of the home page.
 1. Click the **[!UICONTROL debugger icon]** ![Open the Experience Cloud Debugger](images/analytics-debuggerIcon.png) to open your [!UICONTROL Adobe Experience Cloud Debugger]
@@ -348,12 +345,12 @@ Now you will want to make sure that this hit goes in when you scroll down to the
 
       ![Debugger with a Page View](images/analytics-debuggerPageView.png)
 
-1. Leaving the Debugger open, scroll down on your site until you can see the New Arrivals section
+1. Leaving the Debugger open, scroll down on your site until you can see the Featured Products section
 1. View the Debugger again, and another Analytics hit should have appeared. This hit should have the params associated with the s.tl() hit that you set up, namely:
    1. `LinkType = "link_o"` (this means that the hit is a custom link hit, not a page view hit)
-   1. `LinkName = "Scrolled down to New Arrivals"`
-   1. `prop3 = "Home Page - New Arrivals"`
-   1. `eVar3 = "Home Page - New Arrivals"`
+   1. `LinkName = "Scrolled down to Featured Products"`
+   1. `prop3 = "Home Page - Featured Products"`
+   1. `eVar3 = "Home Page - Featured Products"`
    1. `Events = "event3"`
 
       ![Debugger with a Page View](images/analytics-debuggerEntersViewport.png)
@@ -379,6 +376,7 @@ If you are going to add the doPlugins function (below) and use plug-ins, you nee
       ![Configure Analytics](images/analytics-configureExtension.png)
 
 1. Under **[!UICONTROL Library Management]**, select the box labeled `Make tracker globally accessible`. As you can see in the help bubble, this will make the tracker be scoped globally under window.s, which will be important as you refer to it in your customer JavaScript.
+   ![Make tracker globally accessible](images/analytics-makeTrackerGlobal.png)
 
 ### Including the doPlugins Function
 

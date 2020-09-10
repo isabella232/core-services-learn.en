@@ -19,7 +19,7 @@ At the end of this lesson, you will be able to:
 
  Now that you have created and validated your library in the Development environment, it is time to publish it to Staging.
 
-1. Go to the **[!UICONTROL Publishing]** page
+1. Go to the **[!UICONTROL Publishing Flow]** page
 
 1. Open the dropdown next to your library and select **[!UICONTROL Submit for Approval]**
 
@@ -61,11 +61,8 @@ In a real-life scenario, the next step in the process would typically be to have
 
 1. Go to the Tools Tab
 
-1. Click **[!UICONTROL Adobe Launch > Dynamically Insert Launch > Embed Code]** button to open the text input field (it might currently have the URL of your Development embed code):
-
-   ![Click the Adobe Launch > Dynamically Insert Launch > Embed Code button](images/switchEnvironments-debugger-editEmbedCode.png)
-
-1. Paste the Staging embed code that is in your clipboard
+1. In the **[!UICONTROL Adobe Launch > Replace Launch Embed Code]** section paste the Staging embed code that is in your clipboard
+1. Turn on the **[!UICONTROL Apply across luma.enablementadobe.com]** switch
 
 1. Click the disk icon to save
 
@@ -91,7 +88,7 @@ In real-life, once your QA team has signed off by reviewing the changes in the S
 
 1. The library will now appear in the [!UICONTROL Approved] column in the unbuilt state (yellow dot):
 
-1. Open the dropdown and select **[!UICONTROL **Build and Publish to Production]**:
+1. Open the dropdown and select **[!UICONTROL Build and Publish to Production]**:
 
    ![Click Build &amp; Publish to Production](images/publishing-buildAndPublishToProduction.png)
 
