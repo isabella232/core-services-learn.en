@@ -168,7 +168,7 @@ Congratulations, you created your first data element and rule and built your fir
 
 When you are making a lot of changes in Launch, it is inconvenient to have to come to the Publishing tab, add changes, and build the library each time you want to see the result.  Now that you have created your "Initial Setup" library, you can use a feature called "Working Library" to rapidly save your changes and rebuild the library in a single step.
 
-Make a small change to your "All Pages - Library Loaded" rule. In the top navigation, click **[!UICONTROL Rules]** and then click on the `All Pages - Library Loaded` rule to open it up.
+Make a small change to your "All Pages - Library Loaded" rule. In the left navigation, click **[!UICONTROL Rules]** and then click on the `All Pages - Library Loaded` rule to open it up.
 
 ![Reopen the rule](images/launch-reopenRule.png)
 

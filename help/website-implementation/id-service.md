@@ -28,7 +28,7 @@ Since this is the first extension you are adding, here is a quick overview of ex
 
 **To add the Identity Service Extension**
 
-1. In the top navigation, click **[!UICONTROL Extensions]**
+1. In the left navigation, click **[!UICONTROL Extensions]**
 
 1. Click **[!UICONTROL Catalog]** to go to the Extensions Catalog page
 
@@ -92,7 +92,7 @@ Start by creating two data elements:
 
 **To create the data element for Authentication State**
 
-1. Click **[!UICONTROL Data Elements]** in the top navigation
+1. Click **[!UICONTROL Data Elements]** in the left navigation
 1. Click the **[!UICONTROL Add Data Element]** button
 
    ![Click "Add Data Element"](images/idservice-addDataElement1.png)

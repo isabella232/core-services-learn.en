@@ -72,7 +72,7 @@ You have already created an "All Pages - Library Loaded" rule in the [Add a Data
 
 **To Send the Page View Beacon**
 
-1. Go to the **[!UICONTROL Rules]** section in the top navigation and then and then click **[!UICONTROL Add Rule]**
+1. Go to the **[!UICONTROL Rules]** section in the left navigation and then and then click **[!UICONTROL Add Rule]**
 
    ![Add Rule](images/target-addRule.png)
 
@@ -141,7 +141,7 @@ First you need to identify which pages are the Product Detail pages. You will do
 
 **To Create the Data Element for Page Type**
 
-1. Click **[!UICONTROL Data Elements]** in the top navigation
+1. Click **[!UICONTROL Data Elements]** in the left navigation
 1. Click **[!UICONTROL Add Data Element]**
 
    ![Add a new Data Element](images/analytics-addDataElement.png)
@@ -160,7 +160,7 @@ Next, you will collect the product id of the current Product Detail page with a 
 
 **To Create the Data Element for Product Id**
 
-1. Click **[!UICONTROL Data Elements]** in the top navigation
+1. Click **[!UICONTROL Data Elements]** in the left navigation
 1. Click **[!UICONTROL Add Data Element]**
 
    ![Add a new Data Element](images/analytics-addDataElement.png)
@@ -194,7 +194,7 @@ Now, you will use your new data elements and extension to build your Product Det
 
 **To build the Product Detail page rule**
 
-1. Go to the **[!UICONTROL Rules]** section in the top navigation and then and then click **[!UICONTROL Add Rule]**
+1. Go to the **[!UICONTROL Rules]** section in the left navigation and then and then click **[!UICONTROL Add Rule]**
 
    ![Add Rule](images/target-addRule.png)
 
@@ -281,7 +281,7 @@ For this use case, you want to know if people are scrolling down on our Luma hom
 
 ### Create the Rule in Launch
 
-1. Go to the **[!UICONTROL Rules]** section in the top navigation and then click **[!UICONTROL Add Rule]**
+1. Go to the **[!UICONTROL Rules]** section in the left navigation and then click **[!UICONTROL Add Rule]**
    ![Add Rule](images/target-addRule.png)
 1. Name the rule `Homepage - New Arrivals enters Viewport`
 1. Click **[!UICONTROL Events > Add]** to open the `Event Configuration` screen

@@ -124,7 +124,7 @@ At this time, the Customer ID is one of the few parameters that does not show up
 
 1. Click the **[!UICONTROL LOGIN]** link in the top right corner of the site
 
-   ![Click Login in the top navigation](images/idservice-loginNav.png)
+   ![Click Login on the top right](images/idservice-loginNav.png)
 
 1. Enter `test@adobe.com` as the username
 1. Enter `test` as the password
