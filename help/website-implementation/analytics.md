@@ -228,20 +228,6 @@ Now, you will use your new data elements and extension to build your Product Det
 
    ![Click the Plus icon to add a new action](images/analytics-PDPAddAction.png)
 
-1. Select **[!UICONTROL Extension > Adobe Analytics]**
-1. Select **[!UICONTROL Action Type > Set Variables]**
-1. Select **[!UICONTROL eVar1 > Set as]** and enter `product detail page`
-1. Set **[!UICONTROL event1]**, leaving the optional values blank
-1. Under Events, click the **[!UICONTROL Add Another]** button
-1. Set the **[!UICONTROL prodView]** event, leaving the optional values blank
-1. Click **[!UICONTROL Keep Changes]**
-
-      ![Set Analytics Variables in PDP Rule](images/analytics-PDPsetVariables.png)
-
-1. Under Actions, click the ![Click the Plus icon](images/icon-plus.png) to add a new action
-
-      ![Add another Action for the Product String](images/analytics-PDPaddProductStringAction.png)
-
 1. Select **[!UICONTROL Extension > Adobe Analytics Product String]**
 1. Select **[!UICONTROL Action Type > Set s.products]**
 
@@ -252,6 +238,21 @@ Now, you will use your new data elements and extension to build your Product Det
 1. Click **[!UICONTROL Keep Changes]**
 
       ![Add the Product String Variable using the Adobe Analytics Product String extension](images/analytics-PDPaddProductString.png)
+
+
+1. Under Actions, click the ![Click the Plus icon](images/icon-plus.png) to add a new action
+
+      ![Add another Action for the Product String](images/analytics-PDPaddAnotherAction.png)
+
+1. Select **[!UICONTROL Extension > Adobe Analytics]**
+1. Select **[!UICONTROL Action Type > Set Variables]**
+1. Select **[!UICONTROL eVar1 > Set as]** and enter `product detail page`
+1. Set **[!UICONTROL event1]**, leaving the optional values blank
+1. Under Events, click the **[!UICONTROL Add Another]** button
+1. Set the **[!UICONTROL prodView]** event, leaving the optional values blank
+1. Click **[!UICONTROL Keep Changes]**
+
+      ![Set Analytics Variables in PDP Rule](images/analytics-PDPsetVariables.png)
 
 1. Click **[!UICONTROL Save to Library and Build]**
 
@@ -416,11 +417,8 @@ The code for this plug-in is available in the [Analytics Documentation](https://
 1. Copy the following code
 
    ```javascript
-   /*
-   * Adobe Consulting Plugin: getValOnce v2.0
-   */
-   s.getValOnce=function(vtc,cn,et,ep){if(vtc&&(cn=cn||"s_gvo",et=et||0,ep="m"===ep?6E4:864E5,vtc!==this.c_r(cn))){var e=new Date();e.setTime(e.getTime()+et*ep);this.c_w(cn,vtc,0===et?0:ep);return vtc}return""};
-
+   /* Adobe Consulting Plugin: getValOnce v2.01 */
+   s.getValOnce=function(vtc,cn,et,ep){if(vtc&&(cn=cn||"s_gvo",et=et||0,ep="m"===ep?6E4:864E5,vtc!==this.c_r(cn))){var e=new Date;e.setTime(e.getTime()+et*ep);this.c_w(cn,vtc,0===et?0:e);return vtc}return""};
    ```
 
 1. Paste it into the code window in the Analytics extension (if you don't still have it open, re-open it as per the previous step), **completely below** the doPlugins function (not inside of it).
