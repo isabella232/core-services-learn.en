@@ -1,9 +1,6 @@
 ---
 title: Implement Experience Cloud Integrations with Launch
 description: Learn how to validate the Audiences, A4T, and Customer Attributes integrations in your Adobe Experience Cloud implementation. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
-seo-description:
-seo-title: Implement Experience Cloud Integrations with Launch
-solution: Experience Cloud
 ---
 
 # Experience Cloud Integrations
@@ -129,7 +126,7 @@ At this time, the Customer ID is one of the few parameters that does not show up
 
 1. Click the **[!UICONTROL LOGIN]** link in the top right corner of the site
 
-   ![Click Login in the top navigation](images/idservice-loginNav.png)
+   ![Click Login on the top right](images/idservice-loginNav.png)
 
 1. Enter `test@adobe.com` as the username
 1. Enter `test` as the password

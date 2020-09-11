@@ -1,9 +1,6 @@
 ---
 title: Implement the Adobe Experience Platform Identity Service with Launch
 description: Learn how to add the Adobe Experience Platform Identity Service extension and use the Set Customer IDs action to collect customer ids. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
-seo-description:
-seo-title: Implement the Adobe Experience Platform Identity Service with Launch
-solution: Experience Cloud
 ---
 
 # Add the Adobe Experience Platform Identity Service
@@ -31,11 +28,9 @@ Since this is the first extension you are adding, here is a quick overview of ex
 
 **To add the Identity Service Extension**
 
-1. In the top navigation, click **[!UICONTROL Extensions]**
+1. In the left navigation, click **[!UICONTROL Extensions]**
 
 1. Click **[!UICONTROL Catalog]** to go to the Extensions Catalog page
-
-    ![Go to the Extensions Catalog](images/extensions-goToExtensionsCatalog.png)
 
 1. Note the variety of extensions that are available in the Catalog
 
@@ -99,7 +94,7 @@ Start by creating two data elements:
 
 **To create the data element for Authentication State**
 
-1. Click **[!UICONTROL Data Elements]** in the top navigation
+1. Click **[!UICONTROL Data Elements]** in the left navigation
 1. Click the **[!UICONTROL Add Data Element]** button
 
    ![Click "Add Data Element"](images/idservice-addDataElement1.png)
@@ -124,7 +119,7 @@ Start by creating two data elements:
    ![Save the custom code](images/idservice-authenticationCode.png)
 
 1. Leave all of the other settings on their default values
-1. Click **[!UICONTROL Save to Library and Build]** to save the data element and return to the data elements page
+1. Click **[!UICONTROL Save to Library]** to save the data element and return to the data elements page. We will not need to do a "Build" until we've made all of our changes and are ready to validate.
 
    ![Save the data element](images/idservice-authenticationStateFinalSave.png)
 
@@ -140,7 +135,7 @@ By knowing the authentication state of the user, you know when a customer id sho
 1. For the **[!UICONTROL Data Element Type]**, select **[!UICONTROL JavaScript Variable]**
 1. As the **[!UICONTROL JavaScript variable name]**, use the following pointer to a variable in the Luma site's data layer: `digitalData.user.0.profile.0.attributes.username`
 1. Leave all of the other settings on their default values
-1. Click **[!UICONTROL Save to Library and Build]** to save the data element
+1. Click **[!UICONTROL Save to Library]** to save the data element
 
    ![Save the data element](images/idservice-emailHashed.png)
 
@@ -150,7 +145,7 @@ The Adobe Experience Platform Identity Service passes the Customer IDs in rules 
 
 **To create a rule to send the Customer IDs**
 
-1. In the top navigation, click **[!UICONTROL Rules]**
+1. In the left navigation, click **[!UICONTROL Rules]**
 1. Click **[!UICONTROL Add Rule]** to open the Rule Builder
 
    ![Add a rule](images/idservice-addRule.png)
@@ -166,7 +161,7 @@ The Adobe Experience Platform Identity Service passes the Customer IDs in rules 
    ![Add an event](images/idservice-customerId-addEvent.png)
 
     1. For the **[!UICONTROL Event Type]** select **[!UICONTROL Library Loaded (Page Top)]**
-    1. For the  **[!UICONTROL Order]** enter `10`. The Order controls the sequence of rules that are triggered by the same event. Rules with a lower order will fire before rules with a higher order. In this case, you want to set the customer ID before you fire the Target request, which you will do in the next lesson with a rule with an order of `50` .
+    1. Expand the **[!UICONTROL Advanced Options]** section and for the  **[!UICONTROL Order]** enter `10`. The Order controls the sequence of rules that are triggered by the same event. Rules with a lower order will fire before rules with a higher order. In this case, you want to set the customer ID before you fire the Target request, which you will do in the next lesson with a rule with an order of `50` .
     1. Click the **[!UICONTROL Keep Changes]** button to return to the Rule Builder
 
     ![Save the event](images/idservice-customerId-saveEvent.png)
@@ -195,7 +190,7 @@ The Adobe Experience Platform Identity Service passes the Customer IDs in rules 
 
    ![Add a new Action](images/idservice-customerId-addAction.png)
 
-    1. For the **[!UICONTROL Extension]** select **[!UICONTROL Adobe Experience Platform Identity Service]**
+    1. For the **[!UICONTROL Extension]** select **[!UICONTROL Experience Cloud ID Service]**
     1. For the **[!UICONTROL Action Type]** select **[!UICONTROL Set Customer IDs]**
     1. For the **[!UICONTROL Integration Code]** enter `crm_id`
     1. For the **[!UICONTROL Value]** enter open the Data Element selector modal and select the `Email (Hashed)`

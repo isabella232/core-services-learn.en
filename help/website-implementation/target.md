@@ -1,15 +1,13 @@
 ---
 title: Implement Target with Launch
 description: Learn how to implement Adobe Target using Launch with at.js, a page load request, parameters, an order request, and custom header/footer code. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
-seo-title: Implement Target with Launch
-solution: Experience Cloud
 ---
 
 # Add Adobe Target
 
 In this lesson, we will implement the [Adobe Target extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/target-extension/overview.html) with a page load request and custom parameters.
 
-[Adobe Target](https://docs.adobe.com/content/help/en/target/using/target-home.html) is the Adobe Marketing Cloud solution that provides everything you need to tailor and personalize your customers' experience, so you can maximize revenue on your web and mobile sites, apps, social media, and other digital channels.
+[Adobe Target](https://docs.adobe.com/content/help/en/target/using/target-home.html) is the Adobe Experience Cloud solution that provides everything you need to tailor and personalize your customers' experience, so you can maximize revenue on your web and mobile sites, apps, social media, and other digital channels.
 
 ## Learning Objectives
 
@@ -76,7 +74,7 @@ In this first exercise we will add the extension and look at the configurations.
 
 1. When you add the extension, it will import many, but not all of your at.js settings from the Target interface, as pictured below. One setting that will not be imported is the Timeout, which will always be 3000ms after adding the extension. For the tutorial, leave the default settings. Note, that on the left hand side it will show the at.js version that ships with the current version of the extension.
 
-1. Click **[!UICONTROL Save to Library and Build]**
+1. Click **[!UICONTROL Save to Library]**
 
     ![Save the extension](images/target-saveExtension.png)
 
@@ -94,7 +92,7 @@ You can use the `All Pages - Library Loaded` rule you created in the lesson "[Ad
 
 **To Load Target**
 
-1. Go to the **[!UICONTROL Rules]** in the top navigation and then click on `All Pages - Library Loaded` to open the rule editor
+1. Go to the **[!UICONTROL Rules]** in the left navigation and then click on `All Pages - Library Loaded` to open the rule editor
 
    ![Open All Pages - Library Loaded Rule](images/target-editRule.png)
 
@@ -183,7 +181,7 @@ Let's add the `Page Name` data element that we created earlier in the [Add Data 
 
 **To add the request parameter**
 
-1. Go to the **[!UICONTROL Rules]** in the top navigation and then click on `All Pages - Library Loaded` to open the rule editor.
+1. Go to the **[!UICONTROL Rules]** in the left navigation and then click on `All Pages - Library Loaded` to open the rule editor.
 
    ![Open All Pages - Library Loaded Rule](images/target-editRule.png)
 
@@ -309,40 +307,45 @@ The property token is a reserved parameter used with the Target Premium [Enterpr
 
 Target properties are analogous to Launch properties and Analytics report suites. An enterprise with multiple brands, websites, and marketing teams might use a different Target property, Launch property and Analytics report suite for each website or mobile app. Launch properties are differentiated by their embed codes, Analytics report suites are differentiated by their report suite id, and Target properties are differentiated by their property token parameter.
 
-The property token is implemented just like a request parameter. Just name the parameter "at_property" and paste in the value provided in the Target interface.  If you are implementing multiple sites with a single Launch property, you could manage the at_property value via a data element.
+
+The property token must be implemented using a custom code action in Launch with the `targetPageParams()` function. If you are implementing multiple sites with different using different at_property values with a single Launch property, you could manage the at_property value via a data element.
 
 Here is an optional exercise, if you are a Target Premium customer and would like to implement a property token in your Tutorial property:
 
 1. In a separate tab, open the Target user interface
 
-1. Go to **[!UICONTROL Setup > Properties ]**
+1. Go to **[!UICONTROL Administration > Properties ]**
 
 1. Identify the Property that you want to use and click the **[!UICONTROL </> ]** (or create a new property)
 
-1. Copy the `at_property` value to your clipboard
+1. Copy the code snippet within the `<script></script>` to your clipboard
 
    ![Obtain the Property token from the Adobe Target interface](images/target-addATProperty-targetProperties.png)
 
-1. In your Launch tab, go to the **[!UICONTROL Rules]** in the top navigation and then click on `All Pages - Library Loaded` to open the rule editor.
+1. In your Launch tab, go to the **[!UICONTROL Rules]** in the left navigation and then click on `All Pages - Library Loaded` to open the rule editor.
 
    ![Open All Pages - Library Loaded Rule](images/target-editRule.png)
 
-1. Under Actions, click the `Adobe Target - Add Params to Page Load Request` action to open the `Action Configuration`
+1. Under Actions, click the `Core - Custom Code` action to open the `Action Configuration`
 
-   ![Open the Add Params to Page Load Request action](images/target-openParamsAction.png)
+   ![Open the Add Params to Page Load Request action](images/target-openCustomCodeAction.png)
 
-1. Under the `pageName` parameter, click the **[!UICONTROL Add]** button
+1. Open the code editor and paste the code from the Target interface containing the `targetPageParams()` function
+1. Click the the **[!UICONTROL Save]** button
 
    ![Open the Add Params to Page Load Request action](images/target-addATProperty.png)
 
-1. Name the parameter `at_property` and paste in the value you copied from the Target interface
-
+1. Check the **[!UICONTROL Execute globally]** box so `targetPageParams()` is declared in the global scope
 1. Click **[!UICONTROL Keep Changes]**
 
    ![Click Keep Changes](images/target-addATProperty-keepChanges.png)
 
 1. Click **[!UICONTROL Save to Library and Build]**
    ![Click Save and Build to Library](images/target-addATProperty-save.png)
+
+>[!WARNING]
+>
+>If you try to add the `at_property` parameter via the **[!UICONTROL Add Params to Page Load Request]** action, the parameter will populate in the network request but Target's Visual Experience Composer (VEC) will not be able to auto-detect it when loading the page. Always populate `at_property` using the `targetPageParams()` function in a Custom Code action.
 
 #### Validate the Property Token
 
@@ -389,7 +392,7 @@ Let's add the data elements and rule we need to fire an order confirmation reque
 
 **To create the data element for Order Id**
 
-1. Click **[!UICONTROL Data Elements]** in the top navigation
+1. Click **[!UICONTROL Data Elements]** in the left navigation
 1. Click **[!UICONTROL Add Data Element]**
 1. Name the data element `Order Id`
 1. Select **[!UICONTROL Data Element Type > JavaScript Variable]**
@@ -405,7 +408,7 @@ Let's add the data elements and rule we need to fire an order confirmation reque
 1. Select **[!UICONTROL Data Element Type > JavaScript Variable]**
 1. Use `digitalData.cart.cartAmount` as the `JavaScript variable name`
 1. Check the `Clean text` option
-1. Click **[!UICONTROL Save to Libray]**
+1. Click **[!UICONTROL Save to Library]**
 
 **To create the data element for Cart SKUs (Target)**
 
@@ -433,12 +436,12 @@ Now we need to create a rule to fire the order confirmation request with these d
 
 **To create the rule for Order Confirmation page**
 
-1. Click **[!UICONTROL Rules]** in the top navigation
+1. Click **[!UICONTROL Rules]** in the left navigation
 1. Click **[!UICONTROL Add Rule]**
 1. Name the rule `Order Confirmation Page - Library Loaded - 60`
 1. Click **[!UICONTROL Events > Add]**
    1. Select **[!UICONTROL Event Type > Library Loaded (Page Top)]**
-   1. Change the `Order` to `60` so that it will fire after the `Load Target` action (which is in our `All Pages - Library Loaded` rule where `Order` is set to `50`)
+   1. Under **[!UICONTROL Advanced Options]**, change the `Order` to `60` so that it will fire after the `Load Target` action (which is in our `All Pages - Library Loaded` rule where `Order` is set to `50`)
    1. Click **[!UICONTROL Keep Changes]**
 1. Click **[!UICONTROL Conditions > Add]**
    1. Select **[!UICONTROL Condition Type > Path Without Query String]**

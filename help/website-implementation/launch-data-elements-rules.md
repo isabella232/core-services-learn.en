@@ -1,9 +1,6 @@
 ---
 title: Add a Data Element, a Rule and a Library
 description: Learn how to create Data Elements, Rules, and a Library in Launch. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
-seo-description:
-seo-title: Add a Data Element, a Rule and a Library
-solution: Experience Cloud
 ---
 
 # Add a Data Element, a Rule and a Library
@@ -29,7 +26,7 @@ Data elements are Launch’s version of a data layer. They can store values from
 
 **To create a data element**
 
-1. In the top navigation, click **[!UICONTROL Data Elements]**
+1. In the left navigation, click **[!UICONTROL Data Elements]**
 
 1. Since you haven't created any data elements yet in this property, a brief video appears with additional information on this topic. Watch this video, if you like.
 
@@ -40,8 +37,6 @@ Data elements are Launch’s version of a data layer. They can store values from
 1. Name the data element, e.g. `Page Name`
 
 1. Use the [!UICONTROL JavaScript Variable] Data Element type to point to a value in your sample page's data layer: `digitalData.page.pageInfo.pageName`
-
-1. Use "`not available`" as the [!UICONTROL Default Value]. The [!UICONTROL Default Value] tells Launch what value to use for the data element if your JavaScript Variable specified above is not found.
 
 1. Check the boxes for **[!UICONTROL Force lowercase value]** and **[!UICONTROL Clean text]** to standardize the case and remove extraneous spaces
 
@@ -67,7 +62,7 @@ You are going to create a rule that outputs the Page Name data element value to 
 
 **To create a rule**
 
-1. In the top navigation, click **[!UICONTROL Rules]**
+1. In the left navigation, click **[!UICONTROL Rules]**
 
 1. Since you haven't created any rules yet in this property, a brief video appears with additional information on the topic. Watch this video, if you like.
 
@@ -111,6 +106,10 @@ You are going to create a rule that outputs the Page Name data element value to 
 
 1. Click **[!UICONTROL Save]** to save the rule
 
+On the Rules page, you should see your new rule:
+![Rule appears on page](images/launch-savedRule.png)
+
+
 >[!NOTE]
 >
 >**DTM Migrators:** In Launch, rules are required in order to fire most marketing pixels. For example, in order to fire the Adobe Analytics beacon, you must use a rule to instruct Launch to do so.
@@ -131,13 +130,13 @@ In an earlier lesson, you implemented the embed code of your development environ
 
 **To add and build a library**
 
-1. Go to the [!UICONTROL Publishing] tab
+1. In the left navigation, click **[!UICONTROL Publishing Flow]**
 
 1. Click **[!UICONTROL Add New Library]**
 
    ![Add New Library](images/launch-addNewLibrary.png)
 
-1. Name the Library "Initial Setup"
+1. Name the Library, e.g. `Initial Setup`
 
 1. Select **[!UICONTROL Environment > Development]**
 
@@ -173,7 +172,7 @@ Congratulations, you created your first data element and rule and built your fir
 
 When you are making a lot of changes in Launch, it is inconvenient to have to come to the Publishing tab, add changes, and build the library each time you want to see the result.  Now that you have created your "Initial Setup" library, you can use a feature called "Working Library" to rapidly save your changes and rebuild the library in a single step.
 
-Make a small change to your "All Pages - Library Loaded" rule. In the top navigation, click **[!UICONTROL Rules]** and then click on the `All Pages - Library Loaded` rule to open it up.
+Make a small change to your "All Pages - Library Loaded" rule. In the left navigation, click **[!UICONTROL Rules]** and then click on the `All Pages - Library Loaded` rule to open it up.
 
 ![Reopen the rule](images/launch-reopenRule.png)
 
@@ -181,7 +180,7 @@ On the `Edit Rule` page, click the ***[!UICONTROL Working Library]*** dropdown a
 
 ![Select Initial Setup as the Working Library](images/launch-setWorkingLibrary.png)
 
-Once you've selected the library, you should see that the **[!UICONTROL Save]** button now defaults to **[!UICONTROL Save to Library and Build]**. When you make a change in Launch, you can use this option to automatically add the change directly to your working library and rebuild it.
+Once you've selected the library, you should see that the **[!UICONTROL Save]** button now defaults to **[!UICONTROL Save to Library]**. When you make a change in Launch, you can use this option to automatically add the change directly to your working library and/or rebuild it.
 
 Test it out. Open your Custom Code action and just add a colon after the text "The page name is" so the entire code block reads:
 
