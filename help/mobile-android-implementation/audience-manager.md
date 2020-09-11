@@ -64,7 +64,9 @@ A configuration in the Adobe Analytics Admin Console is required to start forwar
 
     ![Select the SSF Menu](images/mobile-aam-selectSSFmenu.png)
 
-    >[!WARNING] As stated above, you will need to have administrator privileges to see this menu item.
+    >[!WARNING]
+    >
+    >As stated above, you will need to have administrator privileges to see this menu item.
 
 1. Once on the Server-Side Forwarding page, read the info and check the box to **[!UICONTROL Enable Server-Side Forwarding]** for the report suite(s).
 
@@ -72,7 +74,9 @@ A configuration in the Adobe Analytics Admin Console is required to start forwar
 
     ![Complete SSF setup](images/mobile-aam-enableSSFcomplete.png)
 
->[!NOTE] Since SSF needs to be enabled per report suite, don't forget to repeat this step for your real report suites when you are deploying SSF in your actual app's report suite.
+>[!NOTE]
+>
+>Since SSF needs to be enabled per report suite, don't forget to repeat this step for your real report suites when you are deploying SSF in your actual app's report suite.
 >
 >Also, if the SSF option is grayed out, you will need to "map the report suite(s) to your Experience Cloud Org in order to enable the option. This is explained in [the documentation](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/report-suite-mapping.html).
 

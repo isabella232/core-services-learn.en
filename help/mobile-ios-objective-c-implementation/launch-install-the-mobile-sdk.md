@@ -136,9 +136,11 @@ Now it's time to update the App to import the SDK:
 
    ![Paste the Extension statements into your AppDelegate file](images/ios/objective-c/mobile-launch-install-pasteExtension.png)
 
->[!NOTE] The Mobile Install Instructions provided in the Launch interface include the import and registration statements for Identity, Lifecycle, and Signal extensions, as well as the initialization of the Lifecyle metrics. These extensions are considered part of the Mobile Core extension. If you do not wish to use these extensions in your app, you do not need to import, register, or implement other code associated with these extensions.
+>[!NOTE]
 >
-> Also, there are additional implementation options which should be considered when using these extensions (for example, you could pause/restart Lifecycle collection when the user backgrounds/foregrounds the app). You can read more about this in [the Mobile Core extension documentation](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core)
+>The Mobile Install Instructions provided in the Launch interface include the import and registration statements for Identity, Lifecycle, and Signal extensions, as well as the initialization of the Lifecyle metrics. These extensions are considered part of the Mobile Core extension. If you do not wish to use these extensions in your app, you do not need to import, register, or implement other code associated with these extensions.
+>
+>Also, there are additional implementation options which should be considered when using these extensions (for example, you could pause/restart Lifecycle collection when the user backgrounds/foregrounds the app). You can read more about this in [the Mobile Core extension documentation](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core)
 
 ## Verify the implementation
 
@@ -176,9 +178,9 @@ Here are examples of some specific calls you can look for:
 1. **Response from the Identity Service** (filter your console to `ID Service`). Note how the `mid` value matches the `d_mid` value in the request above:
 
     ```objective-c
-   2019-03-13 16:53:27.397048-0400 BusBookingObjectiveC[56630:3854937] [AMSDK DEBUG <com.adobe.module.identity>]:
+    2019-03-13 16:53:27.397048-0400 BusBookingObjectiveC[56630:3854937] [AMSDK DEBUG <com.adobe.module.identity>]:
 
-   ID Service - Got ID Response (mid: 67027929491180584128922600814231770586, blob: j8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI, hint: 9, ttl: "604800000 ms")
+    ID Service - Got ID Response (mid: 67027929491180584128922600814231770586, blob: j8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI, hint: 9, ttl: "604800000 ms")
     ```
 
 1. **Analytics request** (filter your console to `Analytics request`)

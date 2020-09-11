@@ -124,7 +124,9 @@ Below is syntax and a code example from the documentation you can copy-and-paste
 
     ![Basic trackState Result](images/ios/objective-c/mobile-analytics-trackStateWithDataResult1.png)
 
->[!NOTE] In case you are familiar with "props and eVars" in Analytics, you will notice that these variable names are not in the SDK. All key/value data coming from the SDK will be sent as [contextData variables](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/variables-analytics-reporting/context-data-variables.html), and as such will need to be mapped to props or eVars (or other variables) by using [Processing Rules](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html) in the Analytics UI.
+>[!NOTE]
+>
+>In case you are familiar with "props and eVars" in Analytics, you will notice that these variable names are not in the SDK. All key/value data coming from the SDK will be sent as [contextData variables](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/variables-analytics-reporting/context-data-variables.html), and as such will need to be mapped to props or eVars (or other variables) by using [Processing Rules](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html) in the Analytics UI.
 
 ### Additional Data-Sending Options
 

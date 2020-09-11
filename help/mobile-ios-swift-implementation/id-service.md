@@ -26,5 +26,6 @@ To validate the calls to the Identity Service, run the sample app in Xcode or De
 
     ```swift
     2019-01-15 12:11:45.681821-0500 BusDemoSwift[52399:5056322] [AMSDK DEBUG <com.adobe.module.identity>]: ID Service - Got ID Response (mid: 17179986463578698626041670574784107777, blob: j8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI, hint: 9, ttl: "604800000 ms")
+    ```
 
 [Next "Add Adobe Target Support" >](target.md)

@@ -27,11 +27,13 @@ After completing this you will be able to:
 
 * Publish changes in Launch through development, staging, and production environments
 
->[!NOTE] Similar multi-solution tutorials are also available for the following platforms:
+>[!NOTE]
 >
-> * [Implementing the Experience Cloud in Mobile iOS Swift&trade; Applications](/help/mobile-ios-swift-implementation/index.md)
-> * [Implementing the Experience Cloud in Mobile iOS Objective-C Applications](/help/mobile-ios-objective-c-implementation/index.md)
-> * [Implementing the Experience Cloud in Mobile Android Applications](/help/mobile-android-implementation/index.md)
+>Similar multi-solution tutorials are also available for the following platforms:
+>
+>* [Implementing the Experience Cloud in Mobile iOS Swift&trade; Applications](/help/mobile-ios-swift-implementation/index.md)
+>* [Implementing the Experience Cloud in Mobile iOS Objective-C Applications](/help/mobile-ios-objective-c-implementation/index.md)
+>* [Implementing the Experience Cloud in Mobile Android Applications](/help/mobile-android-implementation/index.md)
 
 ## Prerequisites
 
@@ -41,7 +43,7 @@ In these lessons, it is assumed that you have an Adobe Id and the required permi
 * For Adobe Analytics, you must know your tracking server and which report suites you will use to complete this tutorial
 * For Audience Manager, you must know your Audience Manager Subdomain (also known as the “Partner Name” “Partner ID,” or “Partner Subdomain”)
 
-Also, it is assumed that you are familiar with front-end development languages like HTML and JavaScript. You do not need to be a master of these languages to complete the lessons, but you will get more out of them if you can comfortably read and understand code.
+Also, it is assumed that you are familiar with front-end development languages like HTML and JavaScript. You do not need to be an expert in these languages to complete the lessons, but you will get more out of them if you can comfortably read and understand code.
 
 ## About Launch
 
@@ -67,7 +69,9 @@ In these lessons, you will implement the Adobe Experience Cloud into a fake reta
 1. Get a text editor in which you can make changes to the sample html page. (If you don't have one, we recommend trying [Brackets](http://brackets.io/))
 1. Bookmark the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html)
 
->[!NOTE] You might find it easier to complete this tutorial with the Luma site open in Chrome, while you read this tutorial and complete the Launch interface steps in a different browser.
+>[!NOTE]
+>
+>You might find it easier to complete this tutorial with the Luma site open in Chrome, while you read this tutorial and complete the Launch interface steps in a different browser.
 
 Let's get started!
 

@@ -4,6 +4,7 @@ user-guide-description: Implementing the Experience Cloud in Websites with Launc
 user-guide-url: /content/help/en/core-services-learn/implementing-in-websites-with-launch/index.html
 cloud: experience-cloud
 product: launch
+type: Tutorial
 ---
 
 # Implementing the Experience Cloud in Websites with Launch {#implementing-in-websites-with-launch}

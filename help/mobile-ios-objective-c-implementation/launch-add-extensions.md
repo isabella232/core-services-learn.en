@@ -14,7 +14,9 @@ Launch is a platform that allows Adobe and third-party vendors to create extensi
 
 Since you will be implementing the Adobe solutions (e.g. Target, Analytics, and Audience Manager), you will add the necessary extensions required to support them.
 
->[!WARNING] Adding and removing Extensions in mobile Launch properties requires you to update your app. This is different from web Launch properties, in which you can add or remove extensions at any time, without having to update your website.
+>[!WARNING]
+>
+>Adding and removing Extensions in mobile Launch properties requires you to update your app. This is different from web Launch properties, in which you can add or remove extensions at any time, without having to update your website.
 
 ## Prerequisites
 
@@ -34,7 +36,9 @@ At the end of this lesson, you will be able to:
 * Configure the Analytics extension
 * Configure the Target extension
 
->[!NOTE] Adobe Audience Manager can be implemented via a configuration in the Analytics extension and thus you will not need to add the Audience Manager extension in this tutorial
+>[!NOTE]
+>
+>Adobe Audience Manager can be implemented via a configuration in the Analytics extension and thus you will not need to add the Audience Manager extension in this tutorial
 
 ## Review the Pre-installed extensions
 
@@ -62,7 +66,9 @@ Now it's time to get to the fun part and start adding the extensions for the sol
 
 ### Add the Adobe Analytics extension
 
->[!NOTE] If you do not have a license for Adobe Analytics, you can skip this section. At this time, the Analytics extension for mobile properties is used solely to manage SDK settings and does not add interface options to Launch, such as Rule actions.
+>[!NOTE]
+>
+>If you do not have a license for Adobe Analytics, you can skip this section. At this time, the Analytics extension for mobile properties is used solely to manage SDK settings and does not add interface options to Launch, such as Rule actions.
 
 **To add the extension**
 
@@ -85,7 +91,9 @@ Now it's time to get to the fun part and start adding the extensions for the sol
 
 The Adobe Target extension supports all of the API familiar to users of our earlier mobile SDKs to deliver personalized content into your app.
 
->[!NOTE] If you do not have a license for Adobe Target, you can skip this section. At this time, the Target extension for mobile properties is used solely to manage SDK settings and do not add interface options to Launch, such as Rule actions.
+>[!NOTE]
+>
+>If you do not have a license for Adobe Target, you can skip this section. At this time, the Target extension for mobile properties is used solely to manage SDK settings and do not add interface options to Launch, such as Rule actions.
 
 **To add the extension**
 
