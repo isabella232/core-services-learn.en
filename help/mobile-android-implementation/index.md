@@ -28,11 +28,13 @@ After completing this tutorial you will be able to:
 
 * Publish changes in Launch through development, staging, and production environments
 
->[!NOTE] Similar multi-solution tutorials are also available for the following platforms:
+>[!NOTE]
 >
-> * [Implementing the Experience Cloud in Mobile iOS Swift&trade; Applications](/help/mobile-ios-swift-implementation/index.md)
-> * [Implementing the Experience Cloud in Mobile iOS Objective-C Applications](/help/mobile-ios-objective-c-implementation/index.md)
-> * [Implementing the Experience Cloud in Websites with Launch](/help/website-implementation/index.md)
+>Similar multi-solution tutorials are also available for the following platforms:
+>
+>* [Implementing the Experience Cloud in Mobile iOS Swift&trade; Applications](/help/mobile-ios-swift-implementation/index.md)
+>* [Implementing the Experience Cloud in Mobile iOS Objective-C Applications](/help/mobile-ios-objective-c-implementation/index.md)
+>* [Implementing the Experience Cloud in Websites with Launch](/help/website-implementation/index.md)
 
 ## Prerequisites
 
@@ -42,7 +44,7 @@ In these lessons, it is assumed that you have an Adobe Id and the required permi
 * For Target, you must have approver-level access to the Adobe Target interface
 * For Adobe Analytics, you must know your tracking server and which report suites you will use to complete this tutorial
 
-Also, it is assumed that you are familiar with Android development in Java. You do not need to be a master of Java to complete the lessons, but you will get more out of them if you can comfortably read and understand code.
+Also, it is assumed that you are familiar with Android development in Java. You do not need to be a Java expert to complete the lessons, but you will get more out of them if you can comfortably read and understand code.
 
 ## About the Lessons
 

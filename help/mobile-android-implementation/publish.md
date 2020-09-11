@@ -89,6 +89,8 @@ Again, notice that the Production environment uses a Launch reference in the Cor
   
   ![Go to the Environments page and click to open the modal](images/android/mobile-publishing-getProductionCode.png)
 
->[!IMPORTANT] The next time you make changes to your Launch configuration you will need to create a new Library in the Development environment. Remember, that adding and removing extensions will require updates to the app itself. Be careful about keeping your Launch environments and app code in sync with each other to avoid issues.
+>[!IMPORTANT]
+>
+>The next time you make changes to your Launch configuration you will need to create a new Library in the Development environment. Remember, that adding and removing extensions will require updates to the app itself. Be careful about keeping your Launch environments and app code in sync with each other to avoid issues.
 
 That’s it! You've completed the tutorial and published your first mobile property in Launch!

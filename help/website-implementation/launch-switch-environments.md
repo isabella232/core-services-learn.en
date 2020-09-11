@@ -56,7 +56,9 @@ At the end of this lesson, you will be able to:
 
    ![Launch environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
->[!NOTE] The Debugger will save this configuration and replace the Launch embed codes whenever you come back to the Luma site. It will not impact other sites you visit in other open tabs. To stop the Debugger from replacing the embed code, click the **[!UICONTROL Remove]** button next to the embed code in the Tools tab of the Debugger.
+>[!NOTE]
+>
+>The Debugger will save this configuration and replace the Launch embed codes whenever you come back to the Luma site. It will not impact other sites you visit in other open tabs. To stop the Debugger from replacing the embed code, click the **[!UICONTROL Remove]** button next to the embed code in the Tools tab of the Debugger.
 
 As you continue the tutorial, you will use this technique of mapping the Luma site to your own Launch property to validate your Launch implementation. When you start using Launch on your production website, you can use this same technique to validate changes.
 

@@ -46,7 +46,9 @@ Since this is the first extension you are adding, here is a quick overview of ex
 
     ![Save the extension](images/idservice-save.png)
 
->[!NOTE] Each version of the Identity Service extension comes with a specific version of VisitorAPI.js which is noted in the extension description. You update the VisitorAPI.js version by updating the Identity Service extension.
+>[!NOTE]
+>
+>Each version of the Identity Service extension comes with a specific version of VisitorAPI.js which is noted in the extension description. You update the VisitorAPI.js version by updating the Identity Service extension.
 
 ### Validate the Extension
 
@@ -150,7 +152,9 @@ The Adobe Experience Platform Identity Service passes the Customer IDs in rules 
 
 1. Name the rule `All Pages - Library Loaded - Authenticated - 10`
   
-    >[!TIP] This naming convention indicates you are firing this rule at the top of all pages when the user is authenticated and it will have an order of “10”. Using a naming convention like this&mdash;instead of naming it for the solutions triggered in the actions&mdash;will allow you to minimize the overall number of rules needed by your implementation.
+   >[!TIP]
+   >
+   >This naming convention indicates you are firing this rule at the top of all pages when the user is authenticated and it will have an order of “10”. Using a naming convention like this&mdash;instead of naming it for the solutions triggered in the actions&mdash;will allow you to minimize the overall number of rules needed by your implementation.
 
 1. Under **[!UICONTROL Events]** click **[!UICONTROL Add]**
 

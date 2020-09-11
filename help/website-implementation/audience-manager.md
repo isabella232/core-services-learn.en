@@ -64,9 +64,11 @@ A configuration in the Adobe Analytics Admin Console is required to start forwar
 
 1. From the Report Suites screen and with the report suite(s) selected, choose **[!UICONTROL Edit Settings > General > Server-Side Forwarding]**.
 
-    ![Select the SSF Menu](images/aam-selectSSFmenu.png)
+   ![Select the SSF Menu](images/aam-selectSSFmenu.png)
 
-    >[!WARNING] As stated above, you will need to have administrator privileges to see this menu item.
+   >[!WARNING]
+   >
+   >As stated above, you will need to have administrator privileges to see this menu item.
 
 1. Once on the Server-Side Forwarding page, read the info and check the box to **[!UICONTROL Enable Server-Side Forwarding]** for the report suite(s).
 
@@ -74,7 +76,9 @@ A configuration in the Adobe Analytics Admin Console is required to start forwar
 
     ![Complete SSF setup](images/aam-enableSSFcomplete.png)
 
->[!NOTE] Since SSF needs to be enabled per report suite, don't forget to repeat this step for your real report suites when you are deploying SSF on your actual site's report suite.
+>[!NOTE]
+>
+>Since SSF needs to be enabled per report suite, don't forget to repeat this step for your real report suites when you are deploying SSF on your actual site's report suite.
 >
 >Also, if the SSF option is grayed out, you will need to "map the report suite(s) to your Experience Cloud Org in order to enable the option. This is explained in [the documentation](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/report-suite-mapping.html).
 
@@ -84,7 +88,9 @@ Once this step has been completed, and if you have the Adobe Experience Platform
 
 This is the second of two steps for enabling SSF. You have already flipped the switch in the Analytics Admin Console, and now you just need to add the code, which Launch will do for you if you simply check the right box.
 
->[!NOTE] To implement Server-Side Forwarding of Analytics data into AAM, we will actually edit/configure the Analytics extension in Launch, **not** the AAM extension. The AAM extension is used exclusively for Client-Side DIL implementations, for those who do not have Adobe Analytics. So the following steps are correct when they send you into the Analytics extension to set this up.
+>[!NOTE]
+>
+>To implement Server-Side Forwarding of Analytics data into AAM, we will actually edit/configure the Analytics extension in Launch, **not** the AAM extension. The AAM extension is used exclusively for Client-Side DIL implementations, for those who do not have Adobe Analytics. So the following steps are correct when they send you into the Analytics extension to set this up.
 
 #### To enable SSF in Launch
 
@@ -129,7 +135,9 @@ Next, we can also verify that the debugger is picking up the right "partner ID" 
 
     ![Validate the Partner ID in the Debugger](images/aam-verifyPartnerID.png)
 
->[!WARNING] You may notice that the Audience Manager section of the debugger refers to "DIL", which is the "Data Integration Library," and typically refers to a client-side implementation, as opposed to the server-side approach that we have implemented here. The truth is that the AAM "Module" (used in this SSF approach) uses a lot of the same code as the client-side DIL library, and so this debugger is currently reporting it as such. If you have followed the steps in this tutorial, and the rest of the items in this validation section are correct, you may rest assured that server-side forwarding is working.
+>[!WARNING]
+>
+>You may notice that the Audience Manager section of the debugger refers to "DIL", which is the "Data Integration Library," and typically refers to a client-side implementation, as opposed to the server-side approach that we have implemented here. The truth is that the AAM "Module" (used in this SSF approach) uses a lot of the same code as the client-side DIL library, and so this debugger is currently reporting it as such. If you have followed the steps in this tutorial, and the rest of the items in this validation section are correct, you may rest assured that server-side forwarding is working.
 
 #### Verify the Analytics Request and Response
 
@@ -150,7 +158,9 @@ Unfortunately, at this time, the Experience Cloud debugger does not support show
 
     ![AA response - stuff object](images/aam-stuffObjectInResponse.png)
 
->[!WARNING] Beware the False "Success" - If there is a response, and everything seems to be working, make **sure** that you have that "stuff" object. If you don't, you may see a message in the response that says "status":"SUCCESS". As crazy as this sounds, this is actually proof that it is **NOT** working correctly. If you see this, it means that you have completed this second step (the code in Launch), but that the forwarding in the Analytics Admin Console (first step of this section) has not yet completed. In this case you need to verify that you have enabled SSF in the Analytics Admin Console. If you have, and it hasn't been 4 hours yet, be patient.
+>[!WARNING]
+>
+>Beware the False "Success" - If there is a response, and everything seems to be working, make **sure** that you have that "stuff" object. If you don't, you may see a message in the response that says "status":"SUCCESS". As crazy as this sounds, this is actually proof that it is **NOT** working correctly. If you see this, it means that you have completed this second step (the code in Launch), but that the forwarding in the Analytics Admin Console (first step of this section) has not yet completed. In this case you need to verify that you have enabled SSF in the Analytics Admin Console. If you have, and it hasn't been 4 hours yet, be patient.
 
 ![AA response - false success](images/aam-responseFalseSuccess.png)
 

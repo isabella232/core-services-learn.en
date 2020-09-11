@@ -46,9 +46,13 @@ Data elements are Launch’s version of a data layer. They can store values from
 
    ![Create the Page Name data element](images/launch-dataElement.png).
 
->[!NOTE]**DTM Migrators:** New data element types have been added to Launch, which did not exist in DTM. Some of the new data element types include Local Storage, Session Storage, Page Info, and Random Number
-<!-- -->
->[!NOTE]Data element capabilities _can be extended with Extensions_. For example, the ContextHub extension allows you to add data elements using features of the extension.
+>[!NOTE]
+>
+>**DTM Migrators:** New data element types have been added to Launch, which did not exist in DTM. Some of the new data element types include Local Storage, Session Storage, Page Info, and Random Number
+
+>[!NOTE]
+>
+>Data element capabilities _can be extended with Extensions_. For example, the ContextHub extension allows you to add data elements using features of the extension.
 
 ## Create a Rule
 
@@ -102,21 +106,21 @@ You are going to create a rule that outputs the Page Name data element value to 
 
 1. Click **[!UICONTROL Save]** to save the rule
 
-
 On the Rules page, you should see your new rule:
 ![Rule appears on page](images/launch-savedRule.png)
 
 
->[!NOTE]**DTM Migrators:** In Launch, rules are required in order to fire most marketing pixels. For example, in order to fire the Adobe Analytics beacon, you must use a rule to instruct Launch to do so.
+>[!NOTE]
 >
-> The Rule builder has been dramatically redesigned and rebuilt in Launch.
-> Some of the main changes are:
+>**DTM Migrators:** In Launch, rules are required in order to fire most marketing pixels. For example, in order to fire the Adobe Analytics beacon, you must use a rule to instruct Launch to do so.
 >
-> * There is just one Rule builder. DTM rule-types like "Page Bottom", "Click", and "Direct Call" are all just event-types in the Rule builder. This makes it much easier to update a rule should you need to change the trigger from, say, a DOM Ready event to a custom event.
-> * There is a new "Custom Code" event-type
-> * Extensions can add new event types to the Rule builder. For example, the Target extension could eventually add built-in support for its [at.js custom events](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/functions-overview/atjs-custom-events.html), so custom code wouldn't be needed to use this feature.
-> * Extensions can add new actions to the Rule builder, reducing issues by deprecating reliance on custom code. You will be using many of these extension actions in this Tutorial.
-> * Rules are required to fire requests associated with most marketing tools. This will require a mindset adjustment, especially for things like setting Customer IDs, firing Analytics beacons, and firing Target requests.
+>The Rule builder has been dramatically redesigned and rebuilt in Launch. Some of the main changes are:
+>
+>* There is just one Rule builder. DTM rule-types like "Page Bottom", "Click", and "Direct Call" are all just event-types in the Rule builder. This makes it much easier to update a rule should you need to change the trigger from, say, a DOM Ready event to a custom event.
+>* There is a new "Custom Code" event-type
+>* Extensions can add new event types to the Rule builder. For example, the Target extension could eventually add built-in support for its [at.js custom events](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/functions-overview/atjs-custom-events.html), so custom code wouldn't be needed to use this feature.
+>* Extensions can add new actions to the Rule builder, reducing issues by deprecating reliance on custom code. You will be using many of these extension actions in this Tutorial.
+>* Rules are required to fire requests associated with most marketing tools. This will require a mindset adjustment, especially for things like setting Customer IDs, firing Analytics beacons, and firing Target requests.
 
 ## Save Your Changes to a Library
 
