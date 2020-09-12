@@ -1,5 +1,6 @@
 ---
 user-guide-title: Implementing the Experience Cloud in Mobile iOS Swift Applications
+breadcrumb-title: Implementing Mobile iOS Swift Guide
 user-guide-url: /content/help/en/core-services-learn/implementing-in-mobile-ios-swift-apps-with-launch/index.html
 ---
 
