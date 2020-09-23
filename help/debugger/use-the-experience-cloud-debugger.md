@@ -1,11 +1,11 @@
 ---
 title: How to Use the Adobe Experience Cloud [!UICONTROL Debugger]
-description: The Adobe Experience Cloud [!UICONTROL Debugger] can help you understand and troubleshoot your implementations. It's optimized to show you exactly what Adobe solutions are implemented and what calls they’re making--specifically to Analytics, [!DNL Target], Audience Manager, Ad Cloud, Launch, Dynamic Tag Management, and the Adobe Experience Platform Identity Service
+description: The Adobe Experience Cloud [!UICONTROL Debugger] can help you understand and troubleshoot your implementations. It's optimized to show you exactly what Adobe solutions are implemented and what calls they’re making--specifically to Adobe Analytics, [!DNL Target], Audience Manager, Ad Cloud, Experience Platform Launch, Dynamic Tag Management, and the Adobe Experience Platform Identity Service
 ---
 
 # How to Use the Adobe Experience Cloud [!UICONTROL Debugger]
 
-The Adobe Experience Cloud [!UICONTROL Debugger] can help you understand and troubleshoot your implementations. It's optimized to show you exactly what Adobe solutions are implemented and what calls they’re making&mdash;specifically to Analytics, [!DNL Target], Audience Manager, Ad Cloud, Launch, Dynamic Tag Management, and the Identity Service
+The Adobe Experience Cloud [!UICONTROL Debugger] can help you understand and troubleshoot your implementations. It's optimized to show you exactly what Adobe solutions are implemented and what calls they’re making&mdash;specifically to Adobe Analytics, [!DNL Target], Audience Manager, Ad Cloud, Experience Platform Launch, Dynamic Tag Management, and the Experience Cloud Identity Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23064/?quality=12)
 

@@ -124,8 +124,8 @@ Here is a summary what these best practices look like in the suggested order. No
     <!--/Launch Header Embed Code-->
 </head>
 <body>
-    <h1>Launch by Adobe: Basic Demo</h1>
-    <p>This is a very simple page to demonstrate basic concepts of Launch by Adobe</p>
+    <h1>Experience Platform Launch: Basic Demo</h1>
+    <p>This is a very simple page to demonstrate basic concepts of Experience Platform Launch</p>
 </body>
 </html>
 ```

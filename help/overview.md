@@ -6,7 +6,7 @@ description: A collection of how-to videos and tutorials to make you a power-use
 # Overview
 
 Adobe Experience Cloud Core Services are capabilities provided to Experience Cloud customers to help them implement and get maximum value from their licensed solutions.
-The Core Services consist of Admin console, Assets, Exchange, Launch, Dynamic Tag Management, Triggers, Feed, Mobile Services, and People.
+The Core Services consist of Admin console, Assets, Exchange, Experience Platform Launch, Dynamic Tag Management, Triggers, Feed, Mobile Services, and People.
 Use these videos and tutorials to learn the many Core Services.
 
 ## What's New
@@ -29,11 +29,11 @@ Use these videos and tutorials to learn the many Core Services.
 <tr>
   <td>
     <a href="https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-websites-with-launch/implement-solutions/target.html">
-      <img alt="Implement in Websites with Launch tutorial" src="assets/launch_referencearchitectureguides.png" />
+      <img alt="Implement in Websites with Experience Platform Launch tutorial" src="assets/launch_referencearchitectureguides.png" />
     </a>
     <div>
       <a href="https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-websites-with-launch/implement-solutions/target.html">
-    <strong>Implement in Websites with Launch</strong>
+    <strong>Implement in Websites with Experience Platform Launch</strong>
     </a>
     </div>
     <p>
@@ -63,7 +63,7 @@ Use these videos and tutorials to learn the many Core Services.
     </a>
     </div>
     <p>
-    <em>Use Launch to implement the new mobile SDK</em>
+    <em>Use Experience Platform Launch to implement the new mobile SDK</em>
     <p>
   </td>
 </tr>

@@ -1,6 +1,6 @@
 ---
 title: Launch Overview and Creating Properties
-seo-title: Launch Overview and Creating Properties Launch by Adobe
+seo-title: Launch Overview and Creating Properties Experience Platform Launch
 description: Get a quick overview of Adobe Experience Platform Launch, and learn how to create new properties to house the code for your site.
 seo-description: Get a quick overview of Adobe Experience Platform Launch, and learn how to create new properties to house the code for your site.
 feature: Launch Properties
