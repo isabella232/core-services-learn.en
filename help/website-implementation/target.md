@@ -240,11 +240,11 @@ You won't pass any profile parameters in this tutorial, but the workflow is almo
 
 ### Entity Parameters
 
-Entity parameters are special parameters used in [Recommendations implementations](https://docs.adobe.com/content/help/en/target/using/recommendations/plan-implement.html) for three main reasons:
+Entity parameters are special parameters used in [[!DNL Recommendations] implementations](https://docs.adobe.com/content/help/en/target/using/recommendations/plan-implement.html) for three main reasons:
 
 1. As a key to trigger product recommendations. For example, when using a recommendations algorithm like "People who viewed Product X, also viewed Y," "X" is the "key" of the recommendation. It is usually the product sku (`entity.id`) or category (`entity.categoryId`) that the visitor is currently viewing.
 1. To collect visitor behavior to power recommendations algorithms, such as "Recently Viewed Products" or "Most Viewed Products"
-1. To populate the Recommendations catalog. Recommendations contains a database of all of the products or articles on your website, so they can be served in the recommendation offer. For example, when recommending products, you typically want to display attributes like the product name (`entity.name`) and image (`entity.thumbnailUrl`). Some customers populate their catalog using backend feeds, but they can also be populated using entity parameters in [!DNL Target] requests.
+1. To populate the [!DNL Recommendations] catalog. [!DNL Recommendations] contains a database of all of the products or articles on your website, so they can be served in the recommendation offer. For example, when recommending products, you typically want to display attributes like the product name (`entity.name`) and image (`entity.thumbnailUrl`). Some customers populate their catalog using backend feeds, but they can also be populated using entity parameters in [!DNL Target] requests.
 
 You don't need to pass any profile parameters in this tutorial, but the workflow is identical to what you did earlier when passing the `pageName` request parameter&mdash;just give the parameter a name prefixed with "entity." and map it to the relevant data element. Note that some common entities have reserved names that must be used (e.g. entity.id for the product sku). This is what it would look like to set entity parameters in the `Add Params to Page Load Request` action:
 
@@ -384,7 +384,7 @@ The order confirmation request is a special type of request used to send order d
 
 The best practice is to use and order confirmation request in all order funnels, even on non-retail sites. For example, lead generation sites usually have lead funnels with a unique "lead id" generated at the end. These sites should implement an order request, using a static value (e.g. "1") for the orderTotal.
 
-Customers using the Analytics for Target (A4T) integration for most of their reporting should also implement the order request, since A4T is not yet compatible with activity types like Auto Allocate, Automated Personalization and Auto Target. Additionally, the order request is a critical element in Recommendations implementations, powering algorithms based on purchase behavior.
+Customers using the Analytics for Target (A4T) integration for most of their reporting should also implement the order request, since A4T is not yet compatible with activity types like Auto Allocate, Automated Personalization and Auto Target. Additionally, the order request is a critical element in [!DNL Recommendations] implementations, powering algorithms based on purchase behavior.
 
 The order confirmation request should fire from a rule that is only triggered on your order confirmation page or event. Often, it can be combined with a rule setting the Adobe Analytics purchase event. It must be configured using the Custom Code action of the Core extension, using the appropriate data elements to set the orderId, orderTotal, and productPurchasedId parameters.
 
@@ -515,7 +515,7 @@ For the time-being, custom parameters passed with at.js 2.x requests are not eas
 
 ### Custom requests
 
-There rare instances when you need to make [!DNL Target] requests other than the page load and order confirmation request. For example, sometimes important data you would like to use for personalization is not defined on the page before the Launch embed codes&mdash;it might be hardcoded on the bottom of the page or get returned from an asynchronous API request. This data can still be sent to [!DNL Target] using an additional request, although it will not be optimal to use this request for content delivery since the page will already visible. It can be used to enrich the visitor profile for later use (using profile parameters) or to populate the Recommendations catalog.
+There rare instances when you need to make [!DNL Target] requests other than the page load and order confirmation request. For example, sometimes important data you would like to use for personalization is not defined on the page before the Launch embed codes&mdash;it might be hardcoded on the bottom of the page or get returned from an asynchronous API request. This data can still be sent to [!DNL Target] using an additional request, although it will not be optimal to use this request for content delivery since the page will already visible. It can be used to enrich the visitor profile for later use (using profile parameters) or to populate the [!DNL Recommendations] catalog.
 
 In these circumstances, use the Custom Code action in the Core extension to fire a request using the [getOffer()](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/functions-overview/adobe-target-applyoffer.html) and [trackEvent()](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/functions-overview/adobe-target-trackevent.html) methods. This is very similar to what you just did in the [Order Confirmation request](#order-confirmation-request) exercise, but you will just use a different request name and will not use the special order parameters. Be sure to use the **[!UICONTROL Load Target]** action before making [!DNL Target] requests from custom code.
 
