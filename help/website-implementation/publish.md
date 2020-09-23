@@ -55,7 +55,7 @@ In a real-life scenario, the next step in the process would typically be to have
 
 1. Open the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html) in your Chrome browser
 
-1. Open the [Experience Cloud Debugger extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) by clicking the ![Debugger Icon](images/icon-debugger.png) icon
+1. Open the [Experience Cloud [!UICONTROL Debugger] extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) by clicking the ![Debugger Icon](images/icon-debugger.png) icon
 
    ![Click the Debugger icon](images/switchEnvironments-openDebugger.png)
 

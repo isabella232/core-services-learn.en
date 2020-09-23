@@ -22,7 +22,7 @@ At the end of this lesson, you will be able to:
 
 ## Create a Data Element for Page Name
 
-Data elements are Launch’s version of a data layer. They can store values from your own data layer object, cookies, local storage objects, query string parameters, page elements, meta tags, etc. In this exercise, you will create a data element for Page Name, which you will use later in your Target and Analytics implementations.
+Data elements are Launch’s version of a data layer. They can store values from your own data layer object, cookies, local storage objects, query string parameters, page elements, meta tags, etc. In this exercise, you will create a data element for Page Name, which you will use later in your [!DNL Target] and Analytics implementations.
 
 **To create a data element**
 
@@ -118,9 +118,9 @@ On the Rules page, you should see your new rule:
 >
 >* There is just one Rule builder. DTM rule-types like "Page Bottom", "Click", and "Direct Call" are all just event-types in the Rule builder. This makes it much easier to update a rule should you need to change the trigger from, say, a DOM Ready event to a custom event.
 >* There is a new "Custom Code" event-type
->* Extensions can add new event types to the Rule builder. For example, the Target extension could eventually add built-in support for its [at.js custom events](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/functions-overview/atjs-custom-events.html), so custom code wouldn't be needed to use this feature.
+>* Extensions can add new event types to the Rule builder. For example, the [!DNL Target] extension could eventually add built-in support for its [at.js custom events](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/functions-overview/atjs-custom-events.html), so custom code wouldn't be needed to use this feature.
 >* Extensions can add new actions to the Rule builder, reducing issues by deprecating reliance on custom code. You will be using many of these extension actions in this Tutorial.
->* Rules are required to fire requests associated with most marketing tools. This will require a mindset adjustment, especially for things like setting Customer IDs, firing Analytics beacons, and firing Target requests.
+>* Rules are required to fire requests associated with most marketing tools. This will require a mindset adjustment, especially for things like setting Customer IDs, firing Analytics beacons, and firing [!DNL Target] requests.
 
 ## Save Your Changes to a Library
 
@@ -198,4 +198,4 @@ Wait a moment until the green dot reappears next to the [!UICONTROL Working Libr
 
 This is a much faster way of working and you will use this approach for the rest of the tutorial.
 
-[Next "Switch Environments with the Experience Cloud Debugger" >](launch-switch-environments.md)
+[Next "Switch Environments with the Experience Cloud [!UICONTROL Debugger]" >](launch-switch-environments.md)

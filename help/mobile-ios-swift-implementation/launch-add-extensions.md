@@ -12,7 +12,7 @@ In this lesson, you will add extensions to your Launch property.
 
 Launch is a platform that allows Adobe and third-party vendors to create extensions to make it easy to deploy their solutions through Launch. An extension is a package of code that extends the Launch interface and client functionality. Extensions give you the ability to choose only the parts of the Adobe Experience Platform Mobile SDK that you need for your specific app.  You can think of Launch as an operating system, and extensions are the apps you use to achieve your tasks.
 
-Since you will be implementing the Adobe solutions (e.g. Target, Analytics, and Audience Manager), you will add the necessary extensions required to support them.
+Since you will be implementing the Adobe solutions (e.g. [!DNL Target], Analytics, and Audience Manager), you will add the necessary extensions required to support them.
 
 >[!WARNING]
 >
@@ -34,7 +34,7 @@ At the end of this lesson, you will be able to:
 
 * Add Extensions to a mobile Launch property
 * Configure the Analytics extension
-* Configure the Target extension
+* Configure the [!DNL Target] extension
 
 >[!NOTE]
 >
@@ -87,13 +87,13 @@ Now it's time to get to the fun part and start adding the extensions for the sol
   
     ![Go to the Extensions catalog and click Install to add the Analytics extension](images/mobile-extensions-analytics-settings.png)
 
-### Add the Target extension
+### Add the [!DNL Target] extension
 
 The Adobe Target extension supports all of the API familiar to users of our earlier mobile SDKs to deliver personalized content into your app.
 
 >[!NOTE]
 >
->If you do not have a license for Adobe Target, you can skip this section. At this time, the Target extension for mobile properties is used solely to manage SDK settings and does not add interface options to Launch, such as Rule actions.
+>If you do not have a license for Adobe Target, you can skip this section. At this time, the [!DNL Target] extension for mobile properties is used solely to manage SDK settings and does not add interface options to Launch, such as Rule actions.
 
 **To add the extension**
 
@@ -101,15 +101,15 @@ The Adobe Target extension supports all of the API familiar to users of our earl
 
 1. Find the **[!UICONTROL Adobe Target]** extension and click **[!UICONTROL Install]**
   
-   ![Go to the Extensions catalog and click Install to add the Target extension](images/mobile-extensions-catalog-installTarget.png)
+   ![Go to the Extensions catalog and click Install to add the [!DNL Target] extension](images/mobile-extensions-catalog-installTarget.png)
 
 1. Your **[!UICONTROL Client Code]** will pre-populate.
 1. Leave the **[!UICONTROL Environment Id]** blank. This setting is used in conjunction with the [Hosts](https://docs.adobe.com/help/en/target/using/administer/hosts.html) feature in Adobe Target, which allows you to send the data to different reporting environments (e.g. Dev, Staging, Production). By default, the data will be sent to the Production environment.
-1. Leave the **[!UICONTROL Target Workspace Property]** blank. This setting is used in conjunction with the Target Premium [Enterprise User Permissions](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/property-channel.html) feature.
-1. Leave the **[!UICONTROL Timeout]** set to 5 seconds. This setting controls how long the app should wait for the Target response before displaying default content.
+1. Leave the **[!UICONTROL Target Workspace Property]** blank. This setting is used in conjunction with the [!DNL Target] Premium [Enterprise User Permissions](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/property-channel.html) feature.
+1. Leave the **[!UICONTROL Timeout]** set to 5 seconds. This setting controls how long the app should wait for the [!DNL Target] response before displaying default content.
 1. Click the **[!UICONTROL Save]** button
   
-    ![Configure the Target settings](images/mobile-extensions-target-settings.png)
+    ![Configure the [!DNL Target] settings](images/mobile-extensions-target-settings.png)
 
 That's it! Now that you have added the extensions to your property, you can add them to a library:
 

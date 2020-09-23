@@ -109,10 +109,10 @@ You have already created an "All Pages - Library Loaded" rule in the [Add a Data
 
 ### Validate the Page View Beacon
 
-Now that you have created a rule to send an Analytics beacon, you should be able to see the request in the Experience Cloud Debugger.
+Now that you have created a rule to send an Analytics beacon, you should be able to see the request in the Experience Cloud [!UICONTROL Debugger].
 
 1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) in your Chrome browser
-1. Click the Debugger icon ![Open the Experience Cloud Debugger](images/analytics-debuggerIcon.png) to open the **[!UICONTROL Adobe Experience Cloud Debugger]**
+1. Click the Debugger icon ![Open the Experience Cloud [!UICONTROL Debugger]](images/analytics-debuggerIcon.png) to open the **[!UICONTROL Adobe Experience Cloud Debugger]**
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
 
    ![Your Launch development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
@@ -260,13 +260,13 @@ Now, you will use your new data elements and extension to build your Product Det
 
 ### Validate the Product Detail Page Data
 
-You  just created a rule that sets variables before the beacon is sent. You should now be able to see the new data going out in the hit in the Experience Cloud Debugger.
+You  just created a rule that sets variables before the beacon is sent. You should now be able to see the new data going out in the hit in the Experience Cloud [!UICONTROL Debugger].
 
 **To validate the Product Detail page data**
 
 1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) in your Chrome browser
 1. Navigate to any product detail page
-1. Click the Debugger icon ![Open the Experience Cloud Debugger](images/analytics-debuggerIcon.png) to open your **[!UICONTROL Adobe Experience Cloud Debugger]**
+1. Click the Debugger icon ![Open the Experience Cloud [!UICONTROL Debugger]](images/analytics-debuggerIcon.png) to open your **[!UICONTROL Adobe Experience Cloud Debugger]**
 1. Click to the Analytics tab
 1. Expand your Report Suite
 1. Notice the Product Detail Variables that are now in the debugger, namely that `eVar1` has been set to "product detail page", that the `Events` variable has been set to "event1" and "prodView", that the products variable is set with the product id of the product you are viewing, and that your Page Name is still set by the Analytics extension
@@ -345,7 +345,7 @@ For this use case, you want to know if people are scrolling down on our Luma hom
 Now you will want to make sure that this hit goes in when you scroll down to the Featured Products section of the Home Page of our site. When you first load the homepage, the request shouldn't be made, but as you scroll down and the section comes into view, the hit should fire with our new values.
 
 1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) in your Chrome browser and make sure you are at the top of the home page.
-1. Click the **[!UICONTROL debugger icon]** ![Open the Experience Cloud Debugger](images/analytics-debuggerIcon.png) to open your [!UICONTROL Adobe Experience Cloud Debugger]
+1. Click the **[!UICONTROL debugger icon]** ![Open the Experience Cloud [!UICONTROL Debugger]](images/analytics-debuggerIcon.png) to open your [!UICONTROL Adobe Experience Cloud Debugger]
 1. Click to the Analytics tab
 1. Expand your Report Suite's hit
 1. Notice the normal page view hit for the home page with the page name, etc. (but nothing in eVar3 or prop3).
@@ -462,7 +462,7 @@ Now you can make sure that the plug-ins are working.
 **To validate the plugins**
 
 1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) in your Chrome browser
-1. Click the Debugger icon ![Open the Experience Cloud Debugger](images/analytics-debuggerIcon.png) to open the **[!UICONTROL Adobe Experience Cloud Debugger]**
+1. Click the Debugger icon ![Open the Experience Cloud [!UICONTROL Debugger]](images/analytics-debuggerIcon.png) to open the **[!UICONTROL Adobe Experience Cloud Debugger]**
 1. Click to the Analytics tab
 1. Expand your Report Suite
 1. Notice the Analytics hit does not have a Campaign variable

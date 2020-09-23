@@ -46,4 +46,4 @@ In the following video, see a quick demo of Opt-in working on the page, and how 
 * Identity Service
 * Analytics
 * Audience Manager
-* Target
+* [!DNL Target]

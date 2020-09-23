@@ -117,10 +117,10 @@ The main way to validate that the Server-Side Forwarding is up and running is by
 #### Verify that the Code is Loading Correctly
 
 The code that Adobe Launch installs to handle the forwarding, and especially the response from AAM to the page, is called the Audience Manager
-"Module." We can use the Experience Cloud Debugger to ensure that it has loaded.
+"Module." We can use the Experience Cloud [!UICONTROL Debugger] to ensure that it has loaded.
 
 1. Open the Luma site
-1. Click the debugger icon in your browser to open the Experience Cloud debugger
+1. Click the debugger icon in your browser to open the Experience Cloud [!UICONTROL Debugger]
 1. Staying on the Summary tab, scroll down to the Analytics section
 1. Verify that **AudienceManagement** is listed under the Modules section
 
@@ -142,7 +142,7 @@ Next, we can also verify that the debugger is picking up the right "partner ID" 
 #### Verify the Analytics Request and Response
 
 OK, this is the biggie. If you are not doing server-side forwarding of data from Analytics to Audience Manager, then there is really no response to the Analytics beacon (besides a 2x2 pixel). However, if you are doing SSF, then there are items that you can verify in the Analytics request and response that will let you know that it is working correctly.
-Unfortunately, at this time, the Experience Cloud debugger does not support showing the response to the beacons. Therefore, you should use another debugger/packet sniffer, like Charles Proxy or the browser's Developer Tools.
+Unfortunately, at this time, the Experience Cloud [!UICONTROL Debugger] does not support showing the response to the beacons. Therefore, you should use another debugger/packet sniffer, like Charles Proxy or the browser's Developer Tools.
 
 1. Open the Developer Tools in your browser and go to the Network tab
 1. In the filter field, type `b/ss` which will limit what you see to the Adobe Analytics requests
