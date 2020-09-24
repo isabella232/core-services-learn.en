@@ -8,7 +8,7 @@ solution: Experience Cloud
 
 # Add a Library
 
-In this lesson, you will create a library for your new Launch property. A library packages together all of the desired Launch settings and generates  the specific implementation instructions required to install the library in your mobile app.
+In this lesson, you will create a library for your new Experience Platform Launch property. A library packages together all of the desired Experience Platform Launch settings and generates  the specific implementation instructions required to install the library in your mobile app.
 
 ## Learning Objectives
 
@@ -48,4 +48,4 @@ After configuring your extensions, you need to package them into a library that 
 
     ![Library Built](images/mobile-launch-libraryBuilt.png)
 
-[Next "Install the Launch Property and the SDK" >](launch-install-the-mobile-sdk.md)
+[Next "Install the Experience Platform Launch Property and the SDK" >](launch-install-the-mobile-sdk.md)

@@ -161,7 +161,7 @@ The Adobe Experience Platform Identity Service passes the Customer IDs in rules 
    ![Add an event](images/idservice-customerId-addEvent.png)
 
     1. For the **[!UICONTROL Event Type]** select **[!UICONTROL Library Loaded (Page Top)]**
-    1. Expand the **[!UICONTROL Advanced Options]** section and for the  **[!UICONTROL Order]** enter `10`. The Order controls the sequence of rules that are triggered by the same event. Rules with a lower order will fire before rules with a higher order. In this case, you want to set the customer ID before you fire the Target request, which you will do in the next lesson with a rule with an order of `50` .
+    1. Expand the **[!UICONTROL Advanced Options]** section and for the  **[!UICONTROL Order]** enter `10`. The Order controls the sequence of rules that are triggered by the same event. Rules with a lower order will fire before rules with a higher order. In this case, you want to set the customer ID before you fire the [!DNL Target] request, which you will do in the next lesson with a rule with an order of `50` .
     1. Click the **[!UICONTROL Keep Changes]** button to return to the Rule Builder
 
     ![Save the event](images/idservice-customerId-saveEvent.png)

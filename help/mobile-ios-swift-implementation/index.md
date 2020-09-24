@@ -16,9 +16,9 @@ Each lesson contains how-to exercises and foundational information to help you i
 
 After completing this tutorial you will be able to:
 
-* Create a mobile Launch property
+* Create a mobile Experience Platform Launch property
 
-* Install a Launch property in a Swift app
+* Install a Experience Platform Launch property in a Swift app
 
 * Implement the following Adobe Experience Cloud solutions:
   * **[Adobe Experience Platform Identity Service](id-service.md)**
@@ -26,7 +26,7 @@ After completing this tutorial you will be able to:
   * **[Adobe Analytics](analytics.md)**
   * **[Adobe Audience Manager](audience-manager.md)**
 
-* Publish changes in Launch through development, staging, and production environments
+* Publish changes in Experience Platform Launch through development, staging, and production environments
 
 >[!NOTE]
 >
@@ -34,14 +34,14 @@ After completing this tutorial you will be able to:
 >
 >* [Implementing the Experience Cloud in Mobile iOS Objective-C Applications](/help/mobile-ios-objective-c-implementation/index.md)
 >* [Implementing the Experience Cloud in Mobile Android&trade; Applications](/help/mobile-android-implementation/index.md)
->* [Implementing the Experience Cloud in Websites with Launch](/help/website-implementation/index.md)
+>* [Implementing the Experience Cloud in Websites with Experience Platform Launch](/help/website-implementation/index.md)
 
 ## Prerequisites
 
 In these lessons, it is assumed that you have an Adobe Id and the required permissions to complete the exercises. If not, you may need to reach out to your Experience Cloud Administrator to request access.
 
-* For Launch, you must have permission to Develop, Approve, Publish, Manage Extensions, and Manage Environments. For more information on Launch permissions, see [the documentation](https://docs.adobe.com/content/help/en/launch/using/reference/admin/user-permissions.html).
-* For Target, you must have approver-level access to the Adobe Target interface
+* For Experience Platform Launch, you must have permission to Develop, Approve, Publish, Manage Extensions, and Manage Environments. For more information on Experience Platform Launch permissions, see [the documentation](https://docs.adobe.com/content/help/en/launch/using/reference/admin/user-permissions.html).
+* For [!DNL Target], you must have approver-level access to the Adobe Target interface
 * For Adobe Analytics, you must know your tracking server and which report suites you will use to complete this tutorial
 
 Also, it is assumed that you are familiar with iOS development in Swift. You do not need to be a Swift expert to complete the lessons, but you will get more out of them if you can comfortably read and understand code.
@@ -61,6 +61,6 @@ In these lessons, you will implement the Adobe Experience Cloud into a demo app 
 
 Let's get started!
 
-[Next "Create a Launch Property" >](launch-create-a-property.md)
+[Next "Create an Experience Platform Launch Property" >](launch-create-a-property.md)
 
 _Apple, the Apple logo, iPad, iPhone, iPod, and iPod touch are trademarks of Apple Inc., registered in the U.S. and other countries. Swift and the Swift logo are trademarks of Apple Inc._

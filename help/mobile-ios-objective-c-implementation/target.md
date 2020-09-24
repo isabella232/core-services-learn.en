@@ -8,6 +8,6 @@ solution: Experience Cloud
 
 # Add Adobe Target
 
-Adobe Target lessons will be added eventually to this tutorial. Until then, please see the [Target mobile documentation](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target) for more details.
+Adobe Target lessons will be added eventually to this tutorial. Until then, please see the [[!DNL Target] mobile documentation](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target) for more details.
   
 [Next "Add Adobe Analytics" >](analytics.md)

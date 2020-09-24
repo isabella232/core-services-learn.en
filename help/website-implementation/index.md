@@ -23,7 +23,7 @@ After completing this you will be able to:
 
 * Create rules and data elements to send data to the Adobe solutions
 
-* Validate the implementation using the Adobe Experience Cloud Debugger
+* Validate the implementation using the Adobe Experience Cloud [!UICONTROL Debugger]
 
 * Publish changes in Launch through development, staging, and production environments
 
@@ -57,14 +57,14 @@ Launch is also a platform that allows third-party vendors to create extensions t
 
 ## About the Lessons
 
-In these lessons, you will implement the Adobe Experience Cloud into a fake retail website called Luma. The [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) has a rich data layer and functionality that will allow you to build a realistic implementation. You will build your own Launch property, in your own Experience Cloud organization, and map it to our hosted Luma site using the Experience Cloud Debugger.
+In these lessons, you will implement the Adobe Experience Cloud into a fake retail website called Luma. The [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) has a rich data layer and functionality that will allow you to build a realistic implementation. You will build your own Launch property, in your own Experience Cloud organization, and map it to our hosted Luma site using the Experience Cloud [!UICONTROL Debugger].
 
 [![Luma website](images/overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)
 
 ## Get the Tools
 
 1. Because you will be using some browser-specific extensions, we recommend completing the tutorial using the [Chrome Web Browser](https://www.google.com/chrome/)
-1. Add the [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) extension to your Chrome browser
+1. Add the [Adobe Experience Cloud [!UICONTROL Debugger]](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) extension to your Chrome browser
 1. Download the [sample html page](https://www.enablementadobe.com/multi/web/basic-sample.html) (right-click on this link and click "Save Link As")
 1. Get a text editor in which you can make changes to the sample html page. (If you don't have one, we recommend trying [Brackets](http://brackets.io/))
 1. Bookmark the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html)

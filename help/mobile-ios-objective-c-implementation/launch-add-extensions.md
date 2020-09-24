@@ -1,6 +1,6 @@
 ---
-title: Add Extensions to a Mobile Launch property
-description: Learn how to add extensions to a mobile Launch property. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Objective-C Applications tutorial.
+title: Add Extensions to a Mobile Experience Platform Launch property
+description: Learn how to add extensions to a Mobile Experience Platform Launch property. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Objective-C Applications tutorial.
 seo-description:
 seo-title: Add Extensions to a Mobile Launch property
 solution: Experience Cloud
@@ -8,19 +8,19 @@ solution: Experience Cloud
 
 # Add Extensions
 
-In this lesson, you will add extensions to your Launch property.
+In this lesson, you will add extensions to your Experience Platform Launch property.
 
-Launch is a platform that allows Adobe and third-party vendors to create extensions to make it easy to deploy their solutions through Launch. An extension is a package of code that extends the Launch interface and client functionality. Extensions give you the ability to choose only the parts of the Adobe Experience Platform Mobile SDK that you need for your specific app.  You can think of Launch as an operating system, and extensions are the apps you use to achieve your tasks.
+Experience Platform Launch is a platform that allows Adobe and third-party vendors to create extensions to make it easy to deploy their solutions through Experience Platform Launch. An extension is a package of code that extends the Experience Platform Launch interface and client functionality. Extensions give you the ability to choose only the parts of the Adobe Experience Platform Mobile SDK that you need for your specific app.  You can think of Experience Platform Launch as an operating system, and extensions are the apps you use to achieve your tasks.
 
-Since you will be implementing the Adobe solutions (e.g. Target, Analytics, and Audience Manager), you will add the necessary extensions required to support them.
+Since you will be implementing the Adobe solutions (e.g. [!DNL Target], Analytics, and Audience Manager), you will add the necessary extensions required to support them.
 
 >[!WARNING]
 >
->Adding and removing Extensions in mobile Launch properties requires you to update your app. This is different from web Launch properties, in which you can add or remove extensions at any time, without having to update your website.
+>Adding and removing Extensions in Mobile Experience Platform Launch properties requires you to update your app. This is different from web Experience Platform Launch properties, in which you can add or remove extensions at any time, without having to update your website.
 
 ## Prerequisites
 
-Your Launch user account needs permission to "Manage Extensions" in order to complete this lesson. If you are unable to complete any of these steps because the user interface options are not available to you, reach out to your Experience Cloud Administrator for access. For more information on Launch permissions, see [the documentation](https://docs.adobe.com/content/help/en/launch/using/reference/admin/user-permissions.html).
+Your Experience Platform Launch user account needs permission to "Manage Extensions" in order to complete this lesson. If you are unable to complete any of these steps because the user interface options are not available to you, reach out to your Experience Cloud Administrator for access. For more information on Experience Platform Launch permissions, see [the documentation](https://docs.adobe.com/content/help/en/launch/using/reference/admin/user-permissions.html).
 
 You will need the following solution details:
 
@@ -32,9 +32,9 @@ You will need the following solution details:
 
 At the end of this lesson, you will be able to:
 
-* Add Extensions to a mobile Launch property
+* Add Extensions to a Mobile Experience Platform Launch property
 * Configure the Analytics extension
-* Configure the Target extension
+* Configure the [!DNL Target] extension
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ At the end of this lesson, you will be able to:
 
    1. Note that your Experience Cloud Org ID is detected automatically and pre-populated
    1. The Experience Cloud Server field allows you to specify a custom endpoint for Visitor ID Service requests. Use the default setting (leave it blank) for this tutorial.
-   1. The Session Timeout field allows you to specify when an app Lifecycle session should timeout. By default, it will timeout if the app is in the background for 300 seconds. Use the default setting for this tutorial.
+   1. The Session Timeout field allows you to specify when an app [!UICONTROL Lifecycle] session should timeout. By default, it will timeout if the app is in the background for 300 seconds. Use the default setting for this tutorial.
 
 1. Since you haven't changed any of the settings, click **[!UICONTROL Cancel]** to leave the extension configuration
 
@@ -62,13 +62,13 @@ At the end of this lesson, you will be able to:
 
 ## Add the Solution Extensions
 
-Now it's time to get to the fun part and start adding the extensions for the solutions you will be implementing in this tutorial. When using Launch with mobile applications, the app must be updated every time an extension is added or removed. In order to save time later, we will add all of the extensions in this lesson. Just skip any solutions which your company has not licensed.
+Now it's time to get to the fun part and start adding the extensions for the solutions you will be implementing in this tutorial. When using Experience Platform Launch with mobile applications, the app must be updated every time an extension is added or removed. In order to save time later, we will add all of the extensions in this lesson. Just skip any solutions which your company has not licensed.
 
 ### Add the Adobe Analytics extension
 
 >[!NOTE]
 >
->If you do not have a license for Adobe Analytics, you can skip this section. At this time, the Analytics extension for mobile properties is used solely to manage SDK settings and does not add interface options to Launch, such as Rule actions.
+>If you do not have a license for Adobe Analytics, you can skip this section. At this time, the Analytics extension for mobile properties is used solely to manage SDK settings and does not add interface options to Experience Platform Launch, such as Rule actions.
 
 **To add the extension**
 
@@ -87,13 +87,13 @@ Now it's time to get to the fun part and start adding the extensions for the sol
   
     ![Go to the Extensions catalog and click Install to add the Analytics extension](images/mobile-extensions-analytics-settings.png)
 
-### Add the Target extension
+### Add the [!DNL Target] extension
 
 The Adobe Target extension supports all of the API familiar to users of our earlier mobile SDKs to deliver personalized content into your app.
 
 >[!NOTE]
 >
->If you do not have a license for Adobe Target, you can skip this section. At this time, the Target extension for mobile properties is used solely to manage SDK settings and do not add interface options to Launch, such as Rule actions.
+>If you do not have a license for Adobe Target, you can skip this section. At this time, the [!DNL Target] extension for mobile properties is used solely to manage SDK settings and do not add interface options to Experience Platform Launch, such as Rule actions.
 
 **To add the extension**
 
@@ -101,15 +101,15 @@ The Adobe Target extension supports all of the API familiar to users of our earl
 
 1. Find the **[!UICONTROL Adobe Target]** extension and click **[!UICONTROL Install]**
   
-   ![Go to the Extensions catalog and click Install to add the Target extension](images/mobile-extensions-catalog-installTarget.png)
+   ![Go to the Extensions catalog and click Install to add the [!DNL Target] extension](images/mobile-extensions-catalog-installTarget.png)
 
 1. Your **[!UICONTROL Client Code]** will pre-populate.
 1. Leave the **[!UICONTROL Environment Id]** blank. This setting is used in conjunction with the [Hosts](https://docs.adobe.com/help/en/target/using/administer/hosts.html) feature in Adobe Target, which allows you to send the data to different reporting environments (e.g. Dev, Staging, Production). By default, the data will be sent to the Production environment.
-1. Leave the **[!UICONTROL Target Workspace Property]** blank. This setting is used in conjunction with the Target Premium [Enterprise User Permissions](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/property-channel.html) feature.
-1. Leave the **[!UICONTROL Timeout]** set to 5 seconds. This setting controls how long the app should wait for the Target response before displaying default content.
+1. Leave the **[!UICONTROL Target Workspace Property]** blank. This setting is used in conjunction with the [!DNL Target] Premium [Enterprise User Permissions](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/property-channel.html) feature.
+1. Leave the **[!UICONTROL Timeout]** set to 5 seconds. This setting controls how long the app should wait for the [!DNL Target] response before displaying default content.
 1. Click the **[!UICONTROL Save]** button
   
-    ![Configure the Target settings](images/mobile-extensions-target-settings.png)
+    ![Configure the [!DNL Target] settings](images/mobile-extensions-target-settings.png)
 
 That's it! Now that you have added the extensions to your property, you can add them to a library:
 

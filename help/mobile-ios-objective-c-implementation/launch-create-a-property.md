@@ -1,32 +1,32 @@
 ---
-title: Create a Launch Property for Mobile Apps
-description: Learn how to log into the Launch interface and create a mobile Launch property. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Objective-C Applications tutorial.
+title: Create a Experience Platform Launch Property for Mobile Apps
+description: Learn how to log into the Experience Platform Launch interface and create a mobile Experience Platform Launch property. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Objective-C Applications tutorial.
 seo-description:
-seo-title: Create a Launch Property for Mobile Apps
+seo-title: Create a Experience Platform Launch Property for Mobile Apps
 solution: Experience Cloud
 ---
 
 # Create a Launch Property
 
-Adobe Experience Platform Launch is the next generation of mobile SDK and website tag management capabilities. Launch gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. There is no additional charge for Launch. It is available to any Adobe Experience Cloud customer.
+Adobe Experience Platform Launch is the next generation of mobile SDK and website tag management capabilities. Experience Platform Launch gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. There is no additional charge for Experience Platform Launch. It is available to any Adobe Experience Cloud customer.
 
-In this lesson, you will create a Launch property for mobile apps.
+In this lesson, you will create a Experience Platform Launch property for mobile apps.
 
 ## Prerequisites
 
-In order to complete the next few lessons, you must have permission to Develop, Approve, Publish, Manage Extensions, and Manage Environments in Launch. If you are unable to complete any of these steps because the user interface options are not available to you, reach out to your Experience Cloud Administrator to request access. For more information on Launch permissions, see [the documentation](https://docs.adobe.com/content/help/en/launch/using/reference/admin/user-permissions.html).
+In order to complete the next few lessons, you must have permission to Develop, Approve, Publish, Manage Extensions, and Manage Environments in Experience Platform Launch. If you are unable to complete any of these steps because the user interface options are not available to you, reach out to your Experience Cloud Administrator to request access. For more information on Experience Platform Launch permissions, see [the documentation](https://docs.adobe.com/content/help/en/launch/using/reference/admin/user-permissions.html).
 
 ## Learning Objectives
 
 At the end of this lesson, you will be able to:
 
-* Log into the Launch user interface
-* Create a new Launch mobile property
-* Configure a Launch mobile property
+* Log into the Experience Platform Launch user interface
+* Create a new Experience Platform Launch mobile property
+* Configure a Experience Platform Launch mobile property
 
-## Go to Launch
+## Go to Experience Platform Launch
 
-**To get to Launch**
+**To get to Experience Platform Launch**
 
 1. Log into the [Adobe Experience Cloud](https://experiencecloud.adobe.com)
 
@@ -44,7 +44,7 @@ You should now see the `Properties` screen (if no properties have ever been crea
 
 ![Properties Screen](images/mobile-launch-propertiesScreen.png)
 
-If you use Launch frequently, you can also bookmark the following URL and log in directly [https://launch.adobe.com](https://launch.adobe.com)
+If you use Experience Platform Launch frequently, you can also bookmark the following URL and log in directly [https://launch.adobe.com](https://launch.adobe.com)
 
 ## Create a Property
 

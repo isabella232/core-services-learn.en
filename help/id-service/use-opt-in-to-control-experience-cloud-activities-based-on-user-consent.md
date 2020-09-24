@@ -27,7 +27,7 @@ Opt-in also is most easily configurable with Adobe Experience Platform Launch. V
 
 >[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
 
-If you are not using Launch, you can set Opt-in’s configuration in the initialization of the global Visitor object, as shown in the [documentation](https://marketing.adobe.com/resources/help/en_US/mcvid/getting-started.html).
+If you are not using Experience Platform Launch, you can set Opt-in’s configuration in the initialization of the global Visitor object, as shown in the [documentation](https://marketing.adobe.com/resources/help/en_US/mcvid/getting-started.html).
 
 ## Implementing Opt-In on the Page
 
@@ -46,4 +46,4 @@ In the following video, see a quick demo of Opt-in working on the page, and how 
 * Identity Service
 * Analytics
 * Audience Manager
-* Target
+* [!DNL Target]

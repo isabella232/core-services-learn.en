@@ -1,8 +1,8 @@
 ---
-title: Implement Adobe Analytics with Launch
-description: Learn how to implement Adobe Analytics using the Adobe Analytics Launch extension, send a screen view beacon, add variables, track events, and add plugins. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Swift Applications tutorial.
+title: Implement Adobe Analytics with Experience Platform Launch
+description: Learn how to implement Adobe Analytics using the Adobe Analytics Experience Platform Launch extension, send a screen view beacon, add variables, track events, and add plugins. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Swift Applications tutorial.
 seo-description:
-seo-title: Implement Adobe Analytics with Launch
+seo-title: Implement Adobe Analytics with Experience Platform Launch
 solution: Experience Cloud
 ---
 
@@ -12,38 +12,38 @@ In this lesson, you will enable Adobe Analytics tracking in your app.
 
 [Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/landing/home.html) is an industry-leading solution that empowers you to understand your customers as people and steer your business with customer intelligence.
 
-In the [Add Extensions](launch-add-extensions.md) and [Install the Mobile SDK](launch-install-the-mobile-sdk.md) lessons, you added the Adobe Analytics extension to your Launch property and imported it into the sample application.  Now all you have to do is add code to track the states and actions in your app!
+In the [Add Extensions](launch-add-extensions.md) and [Install the Mobile SDK](launch-install-the-mobile-sdk.md) lessons, you added the Adobe Analytics extension to your Experience Platform Launch property and imported it into the sample application.  Now all you have to do is add code to track the states and actions in your app!
 
 ## Learning Objectives
 
 At the end of this lesson, you will be able to:
 
-* Verify that Lifecycle metrics are being sent to Adobe Analytics
+* Verify that [!UICONTROL Lifecycle] metrics are being sent to Adobe Analytics
 * Add code to track states in your app with additional data
 * Add code to track actions in your app with additional data
 
-There are many things that could be implemented for Analytics in Launch. This lesson is not exhaustive, but should give you a solid overview of the main techniques you will need for implementing in your own app.
+There are many things that could be implemented for Analytics in Experience Platform Launch. This lesson is not exhaustive, but should give you a solid overview of the main techniques you will need for implementing in your own app.
 
 ## Prerequisites
 
-You should have already completed the lessons in the [Configure Launch](launch-create-a-property.md) section. In that section, you added the Analytics extension and  configured your tracking server and report suite ID(s).
+You should have already completed the lessons in the [Configure Experience Platform Launch](launch-create-a-property.md) section. In that section, you added the Analytics extension and  configured your tracking server and report suite ID(s).
 
-## Lifecycle Metrics and Adobe Analytics
+## [!UICONTROL Lifecycle] Metrics and Adobe Analytics
 
-Lifecycle metrics are environment-based metrics and dimensions that can be easily enabled in an app using the Experience Platform Mobile SDK. In fact, you've already added them!
+[!UICONTROL Lifecycle] metrics are environment-based metrics and dimensions that can be easily enabled in an app using the Experience Platform Mobile SDK. In fact, you've already added them!
 
-You already enabled Lifecycle metrics when you added the Core extension to your property and followed the Mobile Install Instructions provided in the interface. These metrics and dimensions, including environment- and app-specific metrics like app version, number of engaged users, OS version, time parting, days since last use, etc. can be very helpful in the analysis of your app, especially as you build Analytics segments from them to apply to all of your reports. The full list of metrics is available in the [documentation](https://docs.adobe.com/content/help/en/mobile-services/ios/metrics.html).
+You already enabled [!UICONTROL Lifecycle] metrics when you added the Core extension to your property and followed the Mobile Install Instructions provided in the interface. These metrics and dimensions, including environment- and app-specific metrics like app version, number of engaged users, OS version, time parting, days since last use, etc. can be very helpful in the analysis of your app, especially as you build Analytics segments from them to apply to all of your reports. The full list of metrics is available in the [documentation](https://docs.adobe.com/content/help/en/mobile-services/ios/metrics.html).
 
-### Viewing the Analytics Lifecycle Hit
+### Viewing the Analytics [!UICONTROL Lifecycle] Hit
 
-Although you can see the Lifecycle hits in any debugging program/packet sniffer, we will simply show them in the Xcode debugging console.
+Although you can see the [!UICONTROL Lifecycle] hits in any debugging program/packet sniffer, we will simply show them in the Xcode debugging console.
 
 1. Build and run your project in Xcode so that it launches the simulator
 1. In the Xcode debugging console, type `lifecycle` into the filter at the bottom to limit what shows up, and then scroll to the bottom of the entries
 1. Notice the `Analytics request was sent with body` section
-1. Lifecycle metrics include things like AppID, CarrierName, DayOfWeek, DaysSinceFirstUse, and other metrics/dimensions listed in the [documentation](https://docs.adobe.com/content/help/en/mobile-services/ios/metrics.html)
+1. [!UICONTROL Lifecycle] metrics include things like AppID, CarrierName, DayOfWeek, DaysSinceFirstUse, and other metrics/dimensions listed in the [documentation](https://docs.adobe.com/content/help/en/mobile-services/ios/metrics.html)
 
-    ![Lifecycle Hit Debugging](images/ios/swift/mobile-analytics-lifecycleHitDebugging.png)
+    ![[!UICONTROL Lifecycle] Hit Debugging](images/ios/swift/mobile-analytics-lifecycleHitDebugging.png)
 
 ## Import the ACPCore Library
 
@@ -217,8 +217,8 @@ Nice work! You have completed the Analytics lesson. Of course, there are many ot
 
 ## Additional Benefits of trackState and trackAction
 
-In these last exercises, you were able to send data from the app into Adobe Analytics by using the trackState and trackAction APIs. Because the Experience Platform Mobile SDK is rooted in Launch, there are many more things that you can do in the Launch interface leveraging the code you just added.
+In these last exercises, you were able to send data from the app into Adobe Analytics by using the trackState and trackAction APIs. Because the Experience Platform Mobile SDK is rooted in Experience Platform Launch, there are many more things that you can do in the Experience Platform Launch interface leveraging the code you just added.
 
-In Launch you are able to create Rules triggered by the trackState and trackAction APIs, and have them execute additional actions, such as making requests to other Adobe solutions or external partners.
+In Experience Platform Launch you are able to create Rules triggered by the trackState and trackAction APIs, and have them execute additional actions, such as making requests to other Adobe solutions or external partners.
 
 [Next "Add Adobe Audience Manager" >](audience-manager.md)

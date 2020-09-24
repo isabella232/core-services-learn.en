@@ -28,17 +28,17 @@ You should complete all of the previous lessons in this tutorial before followin
 
 ## Audiences
 
-[Audiences](https://docs.adobe.com/content/help/en/core-services/interface/audiences/audience-library.htm) is part of the People Core Service and allows you to share audiences between solutions. For example you can create an audience in Audience Manager and use it to deliver personalized content with Target.
+[Audiences](https://docs.adobe.com/content/help/en/core-services/interface/audiences/audience-library.htm) is part of the People Core Service and allows you to share audiences between solutions. For example you can create an audience in Audience Manager and use it to deliver personalized content with [!DNL Target].
 
 The main requirements to implement A4T&mdash;which you have already done&mdash;are to:
 
 1. Implement the Adobe Experience Platform Identity Service
 1. Implement Audience Manager
-1. Implement other solutions which you would like to receive or create audiences, such as Target and Analytics
+1. Implement other solutions which you would like to receive or create audiences, such as [!DNL Target] and Analytics
 
 ### Validate the Audiences integration
 
-The best way to validate the Audiences integration is to actually build an audience, share it to another solution, and then fully use it in the other solution (e.g. confirm that a visitor who qualifies for an AAM segment can qualify for a Target activity targeted to that segment). However, this is beyond the scope of this tutorial.
+The best way to validate the Audiences integration is to actually build an audience, share it to another solution, and then fully use it in the other solution (e.g. confirm that a visitor who qualifies for an AAM segment can qualify for a [!DNL Target] activity targeted to that segment). However, this is beyond the scope of this tutorial.
 
 These validation steps will focus on the critical part visible in the client-side implementation--the Visitor ID.
 
@@ -52,11 +52,11 @@ These validation steps will focus on the critical part visible in the client-sid
 
 1. Click **[!UICONTROL Clear All Requests]** just to clean things up
 
-1. Reload the Luma page, making sure that you see both the Target and Analytics requests in the Debugger
+1. Reload the Luma page, making sure that you see both the [!DNL Target] and Analytics requests in the Debugger
 
 1. Reload the Luma page again
   
-1. You should now see four requests in the Network tab of the Debugger&mdash;two for Target and two for Analytics
+1. You should now see four requests in the Network tab of the Debugger&mdash;two for [!DNL Target] and two for Analytics
 
 1. Look in the row labeled "Experience Cloud Visitor ID." The IDs in every request by every solution should always be the same.
 
@@ -66,18 +66,18 @@ These validation steps will focus on the critical part visible in the client-sid
 
 ## Analytics for Target (A4T)
 
-The [Analytics for Target (A4T)](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t.html) integration allows you to leverage your Analytics data as the source for reporting metrics in Target.  
+The [Analytics for Target (A4T)](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t.html) integration allows you to leverage your Analytics data as the source for reporting metrics in [!DNL Target].  
 
 The main requirements to implement A4T&mdash;which you have already done&mdash;are to:
 
 1. Implement the Adobe Experience Platform Identity Service
-1. Fire the Target page load request before the Analytics page view beacon
+1. Fire the [!DNL Target] page load request before the Analytics page view beacon
 
-A4T works by stitching together a server-side request from Target to Analytics with the Analytics page view beacon, which we call "hit-stitching."  Hit-stitching requires that the Target request which delivers the activity (or increments a Target-based goal metric) have a parameter which matches a parameter in the Analytics page view beacon. This parameter is called the supplemental data id (SDIDs).
+A4T works by stitching together a server-side request from [!DNL Target] to Analytics with the Analytics page view beacon, which we call "hit-stitching."  Hit-stitching requires that the [!DNL Target] request which delivers the activity (or increments a [!DNL Target]-based goal metric) have a parameter which matches a parameter in the Analytics page view beacon. This parameter is called the supplemental data id (SDIDs).
 
 ### Validate the A4T Implementation
 
-The best way to validate the A4T integration is to actually build a Target activity using A4T and validate the reporting data, however this is beyond the scope of this tutorial. This tutorial will show you how to confirm that the supplemental data ids match between the solution calls.
+The best way to validate the A4T integration is to actually build a [!DNL Target] activity using A4T and validate the reporting data, however this is beyond the scope of this tutorial. This tutorial will show you how to confirm that the supplemental data ids match between the solution calls.
 
 **To validate the SDIDs**
 
@@ -91,17 +91,17 @@ The best way to validate the A4T integration is to actually build a Target activ
 
 1. Click **[!UICONTROL Clear All Requests]** just to clean things up
 
-1. Reload the Luma page, making sure that you see both the Target and Analytics requests in the Debugger
+1. Reload the Luma page, making sure that you see both the [!DNL Target] and Analytics requests in the Debugger
 
 1. Reload the Luma page again
   
-1. You should now see four requests in the Network tab of the Debugger&mdash;two for Target and two for Analytics
+1. You should now see four requests in the Network tab of the Debugger&mdash;two for [!DNL Target] and two for Analytics
 
-1. Look in the row labeled "Supplemental Data ID." The IDs from the first page load should match between Target and Analytics. The IDs from the second page load should also match, but be different from the first page load.
+1. Look in the row labeled "Supplemental Data ID." The IDs from the first page load should match between [!DNL Target] and Analytics. The IDs from the second page load should also match, but be different from the first page load.
 
    ![Confirm the matching SDIDs](images/integrations-matchingSDIDs.png)
 
-If you make additional Target requests in the scope of a page load (not including single-page apps) that are part of A4T activities, it's good to give them unique names (not target-global-mbox) so that they will continue to have the same SDIDs of the initial Target and Analytics requests.
+If you make additional [!DNL Target] requests in the scope of a page load (not including single-page apps) that are part of A4T activities, it's good to give them unique names (not target-global-mbox) so that they will continue to have the same SDIDs of the initial [!DNL Target] and Analytics requests.
 
 ## Customer Attributes
 
@@ -110,12 +110,12 @@ If you make additional Target requests in the scope of a page load (not includin
 The main requirements to implement Customer Attributes&mdash;which you have already done&mdash;are to:
 
 1. Implement the Adobe Experience Platform Identity Service
-1. Set Customer Ids via the Id Service *before* Target and Analytics fire their requests (which you accomplished using the rule ordering feature in Launch)
+1. Set Customer Ids via the Id Service *before* [!DNL Target] and Analytics fire their requests (which you accomplished using the rule ordering feature in Launch)
 
 ### Validate the Customer Attributes Implementation
 
-You have already validated that the Customer IDs are passed to both the Identity Service and to Target in earlier lessons. You can also validate the Customer ID in the Analytics hit as well.
-At this time, the Customer ID is one of the few parameters that does not show up in the Experience Cloud Debugger, so you will use the browser's JavaScript Console to view it.
+You have already validated that the Customer IDs are passed to both the Identity Service and to [!DNL Target] in earlier lessons. You can also validate the Customer ID in the Analytics hit as well.
+At this time, the Customer ID is one of the few parameters that does not show up in the Experience Cloud [!UICONTROL Debugger], so you will use the browser's JavaScript Console to view it.
 
 1. Open the Luma site
 1. Open your browser's Developer Tools

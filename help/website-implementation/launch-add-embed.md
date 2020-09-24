@@ -67,17 +67,17 @@ Let's take a moment to review some of the Launch implementation best practices w
 
 * **Data Layer**:
 
-  * We *strongly* recommend creating a data layer on your site containing all of the attributes needed to populate variables in Analytics, Target, and other marketing solutions. This sample page only contains a very simple data layer, but a real data layer might contain many more details about the page, the visitor, their shopping cart details, etc. For more info on data layers, please see [Customer Experience Digital Data Layer 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf)
+  * We *strongly* recommend creating a data layer on your site containing all of the attributes needed to populate variables in Analytics, [!DNL Target], and other marketing solutions. This sample page only contains a very simple data layer, but a real data layer might contain many more details about the page, the visitor, their shopping cart details, etc. For more info on data layers, please see [Customer Experience Digital Data Layer 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf)
 
   * Define your data layer before the Launch embed code, in order to maximize what you can do with Experience Cloud solutions.
 
-* **JavaScript helper libraries**: If you already have a library like JQuery implemented in the `<head>` of your pages, load it before Launch in order to leverage its syntax in Launch and Target
+* **JavaScript helper libraries**: If you already have a library like JQuery implemented in the `<head>` of your pages, load it before Launch in order to leverage its syntax in Launch and [!DNL Target]
 
-* **HTML5 doctype**: The HTML5 doctype is required by Target
+* **HTML5 doctype**: The HTML5 doctype is required by [!DNL Target]
 
 * **preconnect and dns-prefetch**: Use preconnect and dns-prefetch to improve the page load time. See also: [https://w3c.github.io/resource-hints/](https://w3c.github.io/resource-hints/)
 
-* **pre-hiding snippet for asynchronous Target implementations**: You will learn more about this in the Target lesson, but when Target is deployed via asynchronous Launch embed codes, you should hardcode a pre-hiding snippet on your pages before the Launch embed codes in order to manage content flicker
+* **pre-hiding snippet for asynchronous [!DNL Target] implementations**: You will learn more about this in the [!DNL Target] lesson, but when [!DNL Target] is deployed via asynchronous Launch embed codes, you should hardcode a pre-hiding snippet on your pages before the Launch embed codes in order to manage content flicker
 
 Here is a summary what these best practices look like in the suggested order. Note that there are some placeholders for account specific details:  
 
@@ -124,8 +124,8 @@ Here is a summary what these best practices look like in the suggested order. No
     <!--/Launch Header Embed Code-->
 </head>
 <body>
-    <h1>Launch by Adobe: Basic Demo</h1>
-    <p>This is a very simple page to demonstrate basic concepts of Launch by Adobe</p>
+    <h1>Experience Platform Launch: Basic Demo</h1>
+    <p>This is a very simple page to demonstrate basic concepts of Experience Platform Launch</p>
 </body>
 </html>
 ```
