@@ -1,8 +1,8 @@
 ---
-title: Implement Adobe Audience Manager with Launch
-description: Learn how to implement Adobe Audience Manager on your website using Server-Side Forwarding and Launch. This lesson is part of the Implementing the Experience Cloud in Mobile Android Applications tutorial.
+title: Implement Adobe Audience Manager with Experience Platform Launch
+description: Learn how to implement Adobe Audience Manager on your website using Server-Side Forwarding and Experience Platform Launch. This lesson is part of the Implementing the Experience Cloud in Mobile Android Applications tutorial.
 seo-description:
-seo-title: Implement Adobe Audience Manager with Launch
+seo-title: Implement Adobe Audience Manager with Experience Platform Launch
 solution: Experience Cloud
 ---
 
@@ -24,7 +24,7 @@ At the end of this lesson, you will be able to:
 
 In order to complete this lesson, you will need:
 
-1. To have completed the lessons under the Configuring Launch section, namely [Create a Launch Property](launch-create-a-property.md), [Add Extensions](launch-add-extensions.md), [Create a Library](launch-create-a-library.md), and [Install the Mobile SDK](launch-install-the-mobile-sdk.md).
+1. To have completed the lessons under the Configuring Experience Platform Launch section, namely [Create an Experience Platform Launch Property](launch-create-a-property.md), [Add Extensions](launch-add-extensions.md), [Create a Library](launch-create-a-library.md), and [Install the Mobile SDK](launch-install-the-mobile-sdk.md).
 
 1. Admin access to Adobe Analytics so that you can enable Server-Side Forwarding for the report suite you are using for this tutorial. Alternatively, you can ask an existing admin at your organization to do this for you, following the instructions below.
 
@@ -34,7 +34,7 @@ There are two ways to implement Audience Manager in an app:
 
 * Server-Side Forwarding (SSF)&mdash;for customers with Adobe Analytics, this is the easiest and recommended way to implement. Adobe Analytics forwards data to AAM on Adobe's backend, so that you don't have to make requests from the app directly to Audience Manager. This also enables key integration features and conforms with our best practices for Audience Manager code implementation and deployment.
 
-* Client-Side DIL&mdash;This approach is for customers who do not have Adobe Analytics. Audience Manager methods in the app send data directly into Audience Manager. In this case you would use the Audience Manager extension in Launch when you are setting up your mobile Launch property.
+* Client-Side DIL&mdash;This approach is for customers who do not have Adobe Analytics. Audience Manager methods in the app send data directly into Audience Manager. In this case you would use the Audience Manager extension in Experience Platform Launch when you are setting up your mobile Experience Platform Launch property.
 
 When you previously set up the Analytics extension in the [Add Extensions](launch-add-extensions.md) section of this tutorial, you checked the box to initiate server-side forwarding of data from Analytics to Audience Manager. This will dynamically insert the code needed to handle the response of Audience Manager segments back into your app. We will not be adding the Audience Manager extension in this tutorial, because again, this is only for the use case of when you do NOT have Adobe Analytics.
 
@@ -42,7 +42,7 @@ When you previously set up the Analytics extension in the [Add Extensions](launc
 
 There are three main steps to implement SSF :
 
-1. Adding the Experience Cloud Mobile SDK and Analytics extension to the app, ***which you have already done** in the Configuring Launch lessons
+1. Adding the Experience Cloud Mobile SDK and Analytics extension to the app, ***which you have already done** in the Configuring Experience Platform Launch lessons
 1. Enabling Audience Manager Forwarding in the Analytics extension configuration, ***which you have have already done*** during the [Add Extensions lesson](launch-add-extensions.md) simply by checking a box.
 1. Turning on a "switch" in the Analytics Admin Console to forward data from Analytics to Audience Manager *per report suite*, which we will review in the rest of this lesson.
 
@@ -80,7 +80,7 @@ A configuration in the Adobe Analytics Admin Console is required to start forwar
 >
 >Also, if the SSF option is grayed out, you will need to "map the report suite(s) to your Experience Cloud Org in order to enable the option. This is explained in [the documentation](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/report-suite-mapping.html).
 
-This switch will start the actual forwarding of data to AAM, as long as you have the Adobe Experience Platform Identity Service implemented. The rest of SSF implementation happens in the code, which was handled in Launch when you checked the box in the Analytics extension to forward to AAM.
+This switch will start the actual forwarding of data to AAM, as long as you have the Adobe Experience Platform Identity Service implemented. The rest of SSF implementation happens in the code, which was handled in Experience Platform Launch when you checked the box in the Analytics extension to forward to AAM.
 
 Server-Side Forwarding code is now implemented for your app!
 

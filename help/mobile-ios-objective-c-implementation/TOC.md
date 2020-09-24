@@ -7,7 +7,7 @@ user-guide-url: /content/help/en/core-services-learn/implementing-in-mobile-ios-
 # Implementing the Experience Cloud in Mobile iOS Objective-C Applications {#implementing-in-mobile-ios-objective-c-apps-with-launch}
 
 + [Overview](index.md)
-+ Configuring Launch{#configure-launch}
++ Configuring Experience Platform Launch{#configure-launch}
   + [Create a Property](launch-create-a-property.md)
   + [Add Extensions](launch-add-extensions.md)
   + [Create a Library](launch-create-a-library.md)
